@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab de Longevidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:       #1a5c3a;
+      --green2:      #2e8b57;
+      --green-light: #e8f5ee;
+      --green-pale:  #f4faf7;
+      --ink:         #0f1a14;
+      --ink2:        #2c3e34;
+      --muted:       #5a7265;
+      --hint:        #8aa395;
+      --bg:          #fafaf7;
+      --bg2:         #f2f2ec;
+      --border:      #d0d8d2;
+      --border2:     #b8c5bc;
+      --radius:      8px;
+      --radius-lg:   12px;
+      --head:        'Libre Baskerville', serif;
+      --body:        'DM Sans', sans-serif;
+    }
+
+    body {
+      font-family: var(--body);
+      background: var(--bg2);
+      color: var(--ink);
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 62px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .nav-left { display: flex; align-items: center; gap: 18px; }
+    .tec-logo img { height: 32px; width: auto; display: block; }
+    .nav-divider { width: 1px; height: 28px; background: var(--border2); }
+    .logo {
+      font-family: var(--head);
+      font-size: 19px;
+      color: var(--ink);
+      cursor: pointer;
+      letter-spacing: -0.3px;
+      font-weight: 700;
+    }
+    .logo span { color: var(--green2); font-style: italic; }
+    .nav-links { display: flex; gap: 2px; list-style: none; }
+    .nav-links button {
+      background: none;
+      border: none;
+      font-family: var(--body);
+      font-size: 14px;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 7px 14px;
+      border-radius: var(--radius);
+      transition: all 0.15s;
+      font-weight: 400;
+    }
+    .nav-links button:hover { background: var(--green-light); color: var(--ink); }
+    .nav-links button.active { color: var(--green); font-weight: 500; background: var(--green-light); }
+    .nav-cta {
+      background: var(--green);
+      color: #fff;
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--green2); }
+
+    /* ── PAGES ── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ── HERO ── */
+    .hero-wrap { width: 100%; height: 500px; position: relative; overflow: hidden; }
+    .hero-wrap video { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 48px 5vw;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(26,92,58,0.88);
+      color: #b8e8cc;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 3px;
+      margin-bottom: 18px;
+      font-family: var(--body);
+    }
+    .hero-h1 {
+      font-family: var(--head);
+      font-size: clamp(30px, 4vw, 54px);
+      color: #fff;
+      line-height: 1.15;
+      letter-spacing: -0.8px;
+      max-width: 700px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .hero-h1 em { font-style: italic; color: #8dd4aa; }
+    .hero-sub {
+      font-size: 16px;
+      color: rgba(255,255,255,0.78);
+      font-weight: 300;
+      max-width: 520px;
+      font-family: var(--body);
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar { background: var(--bg); border-bottom: 1px solid var(--border); }
+    .stats-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .stat-item { padding: 26px 24px; border-right: 1px solid var(--border); }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--head);
+      font-size: 38px;
+      color: var(--green);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-lbl { font-size: 13px; color: var(--muted); line-height: 1.5; font-weight: 300; }
+
+    /* ── HOME BODY ── */
+    .home-body { max-width: 1100px; margin: 0 auto; padding: 64px 5vw; }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green2);
+      margin-bottom: 12px;
+      font-family: var(--body);
+    }
+    .sec-h2 {
+      font-family: var(--head);
+      font-size: clamp(24px, 3vw, 36px);
+      color: var(--ink);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .sec-lead {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.75;
+      font-weight: 300;
+      max-width: 560px;
+      margin-bottom: 40px;
+    }
+
+    /* ── FOCUS CARDS ── */
+    .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 60px; }
+    .focus-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 22px;
+      transition: border-color 0.2s;
+      position: relative;
+    }
+    .focus-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--green2);
+      border-radius: 3px 0 0 3px;
+    }
+    .focus-card:hover { border-color: var(--green2); }
+    .focus-card h3 {
+      font-family: var(--head);
+      font-size: 17px;
+      color: var(--ink);
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .focus-card p { font-size: 14px; color: var(--muted); line-height: 1.65; font-weight: 300; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--green);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-band h3 {
+      font-family: var(--head);
+      font-size: 26px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.25;
+      max-width: 460px;
+    }
+    .cta-band p { font-size: 15px; color: rgba(255,255,255,0.72); font-weight: 300; margin-top: 6px; }
+    .btn-white {
+      background: #fff;
+      color: var(--green);
+      font-family: var(--body);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 26px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* ── INTERIOR PAGE HERO ── */
+    .page-hero { background: var(--bg); border-bottom: 1px solid var(--border); padding: 60px 5vw 50px; }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; }
+    .page-hero h1 {
+      font-family: var(--head);
+      font-size: clamp(28px, 3.5vw, 44px);
+      color: var(--ink);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+    .page-hero p { font-size: 17px; color: var(--muted); line-height: 1.75; font-weight: 300; }
+
+    /* ── CONTENT WRAP ── */
+    .content-wrap { max-width: 1000px; margin: 0 auto; padding: 60px 5vw; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-bottom: 56px; }
+    .prose p { font-size: 15px; color: var(--muted); line-height: 1.8; font-weight: 300; margin-bottom: 14px; }
+
+    /* ── VALUES ── */
+    .value-list { display: flex; flex-direction: column; gap: 12px; }
+    .value-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px 20px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .value-num { font-family: var(--head); font-size: 22px; color: var(--green2); font-weight: 700; min-width: 28px; line-height: 1; }
+    .value-text h4 { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 3px; }
+    .value-text p { font-size: 13px; color: var(--muted); line-height: 1.55; font-weight: 300; }
+
+    /* ── PARTNER TAGS ── */
+    .partner-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    .partner-tag {
+      background: var(--green-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 7px 14px;
+      font-size: 13px;
+      color: var(--green);
+      font-weight: 400;
+    }
+
+    /* ── RESEARCH ── */
+    .research-list { display: flex; flex-direction: column; gap: 18px; }
+    .research-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 28px;
+      align-items: start;
+      transition: border-color 0.15s;
+    }
+    .research-card:hover { border-color: var(--green2); }
+    .pill {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .pill-r { background: #e8f5ee; color: #0f5c35; }
+    .pill-b { background: #e8f0fb; color: #185fa5; }
+    .pill-d { background: #faeeda; color: #854f0b; }
+    .r-meta { font-size: 12px; color: var(--hint); margin-top: 7px; }
+    .research-card h3 {
+      font-family: var(--head);
+      font-size: 18px;
+      color: var(--ink);
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 10px 0 8px;
+    }
+    .research-card p { font-size: 14px; color: var(--muted); line-height: 1.65; font-weight: 300; }
+    .r-link { display: inline-block; margin-top: 12px; font-size: 13px; color: var(--green2); font-weight: 500; cursor: pointer; }
+
+    /* ── PEOPLE ── */
+    .people-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .person-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .person-avatar {
+      height: 96px;
+      background: var(--green-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .avatar-initials { font-family: var(--head); font-size: 30px; color: var(--green); font-weight: 700; font-style: italic; }
+    .person-info { padding: 20px; }
+    .person-info h3 { font-family: var(--head); font-size: 17px; color: var(--ink); font-weight: 700; margin-bottom: 4px; }
+    .person-role { font-size: 12px; color: var(--green2); font-weight: 500; letter-spacing: 0.5px; margin-bottom: 8px; font-family: var(--body); }
+    .person-info p { font-size: 13px; color: var(--muted); line-height: 1.6; font-weight: 300; }
+    .person-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+    .ptag { font-size: 11px; background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 3px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      padding: 36px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .foot-logo { font-family: var(--head); font-size: 17px; color: #fff; font-style: italic; }
+    .foot-logo span { color: #8dd4aa; }
+    .foot-note { font-size: 13px; color: #6b8878; font-weight: 300; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 720px) {
+      .stats-inner, .focus-grid, .people-grid, .two-col { grid-template-columns: 1fr; }
+      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .research-card { grid-template-columns: 1fr; }
+      .hero-wrap { height: 360px; }
+      .nav-cta { display: none; }
+      .nav-links button { padding: 6px 9px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─────────────────────────────────
+     NAV
+───────────────────────────────── -->
+<nav>
+  <div class="nav-left">
+    <div class="tec-logo"><img src="logo.png" alt="Tec de Monterrey"></div>
+    <div class="nav-divider"></div>
+    <div class="logo" onclick="show('home')">Lab de <span>Longevidad</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><button onclick="show('home')"     id="nav-home"     class="active">Inicio</button></li>
+    <li><button onclick="show('about')"    id="nav-about">Quiénes somos</button></li>
+    <li><button onclick="show('research')" id="nav-research">Investigación</button></li>
+    <li><button onclick="show('people')"   id="nav-people">Nuestro equipo</button></li>
+  </ul>
+  <button class="nav-cta">Contacto</button>
+</nav>
+
+<!-- ─────────────────────────────────
+     HOME
+───────────────────────────────── -->
+<div class="page active" id="page-home">
+
+  <!-- Hero image -->
+  <div class="hero-wrap">
+    <video autoplay loop muted playsinline>
+      <source src="14509607_1280_720_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+      <h1 class="hero-h1">El mundo envejece.<br><em>Las economías deben adaptarse.</em></h1>
+      <p class="hero-sub">Investigación y análisis de sobre el impacto económico del envejecimiento global.</p>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">48.4 millones</div>
+        <div class="stat-lbl">numero de mayores de 60 años en México para el 2070, el triple que hoy</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50%</div>
+        <div class="stat-lbl">de las personas nacidas en 2007 vivirán más de 104 años</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4 trabajadores</div>
+        <div class="stat-lbl"> son los que habrán por cada adulto mayor en el 2050, hoy existen 10 trabajadores por cada adulto mayor</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="home-body">
+    <div class="eyebrow">Qué hacemos</div>
+    <div class="sec-h2">Tres áreas de enfoque</div>
+    <p class="sec-lead">Nuestro trabajo aborda las dimensiones económicas de la longevidad más relevantes para quienes diseñan políticas, gestionan instituciones y dirigen empresas.</p>
+
+    <div class="focus-grid">
+      <div class="focus-card">
+        <h3>Macroeconomía del envejecimiento</h3>
+        <p>Cómo las transiciones demográficas transforman el crecimiento del PIB, los sistemas fiscales y las transferencias intergeneracionales.</p>
+      </div>
+      <div class="focus-card">
+        <h3>Mercados laborales y longevidad productiva</h3>
+        <p>La economía de las vidas laborales más largas: recapacitación, pensiones, fuerzas de trabajo multigeneracionales y productividad.</p>
+      </div>
+      <div class="focus-card">
+        <h3>Sistemas financieros y equidad</h3>
+        <p>Reforma de pensiones, financiamiento de cuidados a largo plazo y arquitectura financiera para trayectorias de vida más diversas.</p>
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <div>
+        <h3>La economía de la longevidad no puede esperar</h3>
+        <p>Únase a nuestra red de investigadores, responsables de política y líderes empresariales.</p>
+      </div>
+      <button class="btn-white">Contáctenos</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-logo">Lab de <span>Longevidad</span></div>
+    <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
+  </footer>
+</div>
+
+<!-- ─────────────────────────────────
+     QUIÉNES SOMOS
+───────────────────────────────── -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Quiénes somos</div>
+      <h1>Un laboratorio de ideas dedicado a la economía de la longevidad</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud.</p>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+    <div class="two-col">
+      <div>
+        <div class="eyebrow">Nuestra misión</div>
+        <div class="sec-h2" style="font-size:26px">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="prose">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="value-list">
+        <div class="value-item">
+          <div class="value-num">01</div>
+          <div class="value-text">
+            <h4>Rigor académico</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-num">02</div>
+          <div class="value-text">
+            <h4>Relevancia práctica</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-num">03</div>
+          <div class="value-text">
+            <h4>Perspectiva interdisciplinaria</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-num">04</div>
+          <div class="value-text">
+            <h4>Diálogo multisectorial</h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="eyebrow">Alianzas estratégicas</div>
+      <div class="sec-h2" style="font-size:24px; margin-bottom:8px">Lorem ipsum dolor sit amet instituciones</div>
+      <p style="font-size:15px; color:var(--muted); line-height:1.75; font-weight:300; margin-bottom:18px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation.
+      </p>
+      <div class="partner-strip">
+        <div class="partner-tag">Universidades</div>
+        <div class="partner-tag">Bancos centrales</div>
+        <div class="partner-tag">Organismos multilaterales</div>
+        <div class="partner-tag">Fondos de pensiones</div>
+        <div class="partner-tag">Gobiernos nacionales</div>
+        <div class="partner-tag">Sector salud</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-logo">Lab de <span>Longevidad</span></div>
+    <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
+  </footer>
+</div>
+
+<!-- ─────────────────────────────────
+     INVESTIGACIÓN
+───────────────────────────────── -->
+<div class="page" id="page-research">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Investigación</div>
+      <h1>Evidencia para las decisiones de hoy</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud.</p>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+    <div class="research-list">
+
+      <div class="research-card">
+        <div>
+          <div class="pill pill-r">Reporte</div>
+          <div class="r-meta">2025 · Macroeconomía</div>
+        </div>
+        <div>
+          <h3>Razones detrás de la desincorporación de los adultos mayores en la economía laboral</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <div class="r-link">Leer el reporte →</div>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div>
+          <div class="pill pill-b">Nota de política</div>
+          <div class="r-meta">2025 · Mercados laborales</div>
+        </div>
+        <div>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <div class="r-link">Leer la nota →</div>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div>
+          <div class="pill pill-d">Base de datos</div>
+          <div class="r-meta">2024 · Economía financiera</div>
+        </div>
+        <div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit ut labore et dolore</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <div class="r-link">Acceder a los datos →</div>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div>
+          <div class="pill pill-r">Reporte</div>
+          <div class="r-meta">2024 · Demografía y crecimiento</div>
+        </div>
+        <div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit quis nostrud exercitation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <div class="r-link">Leer el reporte →</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-logo">Lab de <span>Longevidad</span></div>
+    <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
+  </footer>
+</div>
+
+<!-- ─────────────────────────────────
+     NUESTRO EQUIPO
+───────────────────────────────── -->
+<div class="page" id="page-people">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Nuestro equipo</div>
+      <h1>Nosotros</h1>
+  </div>
+
+  <div class="content-wrap">
+    <div class="people-grid">
+
+      <div class="person-card">
+        <div class="person-avatar"><div class="avatar-initials">OT</div></div>
+        <div class="person-info">
+          <h3>Dr. Oscar E. Vela Treviño</h3>
+          <div class="person-role">Director fundador</div>
+          <p>Economista con doctorado en la Universidad de Chicago y licenciatura en el ITAM. Su carrera abarca el sector privado y el sector público, donde fue Subsecretario Adjunto de Pensiones en la SHCP y CFO del Infonavit durante seis años.</p>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-avatar"><div class="avatar-initials">JP</div></div>
+        <div class="person-info">
+          <h3>Juan Pablo Santisteban</h3>
+          <div class="person-role">Investigador</div>
+          <p>Economista por el Tecnólogico de Monterrey. Trabajó en el Center for Tax Policy and Administration en la OECD. Actualmente cursa una maestría en Economía en la Universidad de Yale.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-logo">Lab de <span>Longevidad</span></div>
+    <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
+  </footer>
+</div>
+
+<!-- ─────────────────────────────────
+     JS — page navigation
+───────────────────────────────── -->
+<script>
+  function show(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    document.getElementById('nav-' + name).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
