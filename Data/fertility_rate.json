@@ -1,0 +1,2234 @@
+{
+  "Africa": [
+    {
+      "Entity": "Africa",
+      "Year": 1950,
+      "value": 6.516
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1951,
+      "value": 6.53
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1952,
+      "value": 6.541
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1953,
+      "value": 6.558
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1954,
+      "value": 6.569
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1955,
+      "value": 6.581
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1956,
+      "value": 6.594
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1957,
+      "value": 6.606
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1958,
+      "value": 6.617
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1959,
+      "value": 6.631
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1960,
+      "value": 6.645
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1961,
+      "value": 6.658
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1962,
+      "value": 6.673
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1963,
+      "value": 6.679
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1964,
+      "value": 6.68
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1965,
+      "value": 6.676
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1966,
+      "value": 6.687
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1967,
+      "value": 6.691
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1968,
+      "value": 6.691
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1969,
+      "value": 6.687
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1970,
+      "value": 6.688
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1971,
+      "value": 6.692
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1972,
+      "value": 6.693
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1973,
+      "value": 6.689
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1974,
+      "value": 6.688
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1975,
+      "value": 6.686
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1976,
+      "value": 6.676
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1977,
+      "value": 6.663
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1978,
+      "value": 6.647
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1979,
+      "value": 6.62
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1980,
+      "value": 6.589
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1981,
+      "value": 6.548
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1982,
+      "value": 6.509
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1983,
+      "value": 6.46
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1984,
+      "value": 6.394
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1985,
+      "value": 6.322
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1986,
+      "value": 6.244
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1987,
+      "value": 6.169
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1988,
+      "value": 6.092
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1989,
+      "value": 6.004
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1990,
+      "value": 5.909
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1991,
+      "value": 5.827
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1992,
+      "value": 5.747
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1993,
+      "value": 5.663
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1994,
+      "value": 5.589
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1995,
+      "value": 5.508
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1996,
+      "value": 5.429
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1997,
+      "value": 5.353
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1998,
+      "value": 5.296
+    },
+    {
+      "Entity": "Africa",
+      "Year": 1999,
+      "value": 5.248
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2000,
+      "value": 5.203
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2001,
+      "value": 5.16
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2002,
+      "value": 5.115
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2003,
+      "value": 5.082
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2004,
+      "value": 5.059
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2005,
+      "value": 5.04
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2006,
+      "value": 5.013
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2007,
+      "value": 4.985
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2008,
+      "value": 4.968
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2009,
+      "value": 4.927
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2010,
+      "value": 4.891
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2011,
+      "value": 4.842
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2012,
+      "value": 4.796
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2013,
+      "value": 4.74
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2014,
+      "value": 4.686
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2015,
+      "value": 4.625
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2016,
+      "value": 4.545
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2017,
+      "value": 4.482
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2018,
+      "value": 4.391
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2019,
+      "value": 4.312
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2020,
+      "value": 4.242
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2021,
+      "value": 4.179
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2022,
+      "value": 4.125
+    },
+    {
+      "Entity": "Africa",
+      "Year": 2023,
+      "value": 4.072
+    }
+  ],
+  "Asia": [
+    {
+      "Entity": "Asia",
+      "Year": 1950,
+      "value": 5.694
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1951,
+      "value": 5.609
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1952,
+      "value": 5.926
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1953,
+      "value": 5.757
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1954,
+      "value": 5.863
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1955,
+      "value": 5.85
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1956,
+      "value": 5.691
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1957,
+      "value": 5.913
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1958,
+      "value": 5.646
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1959,
+      "value": 5.274
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1960,
+      "value": 5.183
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1961,
+      "value": 4.951
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1962,
+      "value": 5.789
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1963,
+      "value": 6.313
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1964,
+      "value": 5.994
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1965,
+      "value": 5.948
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1966,
+      "value": 5.774
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1967,
+      "value": 5.595
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1968,
+      "value": 5.815
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1969,
+      "value": 5.654
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1970,
+      "value": 5.591
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1971,
+      "value": 5.352
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1972,
+      "value": 5.164
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1973,
+      "value": 4.978
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1974,
+      "value": 4.716
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1975,
+      "value": 4.43
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1976,
+      "value": 4.263
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1977,
+      "value": 4.058
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1978,
+      "value": 3.966
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1979,
+      "value": 3.945
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1980,
+      "value": 3.908
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1981,
+      "value": 3.871
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1982,
+      "value": 3.88
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1983,
+      "value": 3.671
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1984,
+      "value": 3.642
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1985,
+      "value": 3.591
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1986,
+      "value": 3.58
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1987,
+      "value": 3.543
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1988,
+      "value": 3.412
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1989,
+      "value": 3.36
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1990,
+      "value": 3.314
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1991,
+      "value": 3.048
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1992,
+      "value": 2.936
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1993,
+      "value": 2.86
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1994,
+      "value": 2.802
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1995,
+      "value": 2.748
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1996,
+      "value": 2.693
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1997,
+      "value": 2.649
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1998,
+      "value": 2.607
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1999,
+      "value": 2.575
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2000,
+      "value": 2.584
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2001,
+      "value": 2.532
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2002,
+      "value": 2.49
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2003,
+      "value": 2.451
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2004,
+      "value": 2.428
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2005,
+      "value": 2.397
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2006,
+      "value": 2.381
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2007,
+      "value": 2.367
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2008,
+      "value": 2.361
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2009,
+      "value": 2.353
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2010,
+      "value": 2.323
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2011,
+      "value": 2.303
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2012,
+      "value": 2.331
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2013,
+      "value": 2.281
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2014,
+      "value": 2.265
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2015,
+      "value": 2.227
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2016,
+      "value": 2.241
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2017,
+      "value": 2.206
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2018,
+      "value": 2.118
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2019,
+      "value": 2.075
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2020,
+      "value": 1.973
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2021,
+      "value": 1.927
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2022,
+      "value": 1.896
+    },
+    {
+      "Entity": "Asia",
+      "Year": 2023,
+      "value": 1.881
+    }
+  ],
+  "Europa": [
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1950,
+      "value": 3.105
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1951,
+      "value": 3.212
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1952,
+      "value": 3.31
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1953,
+      "value": 3.379
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1954,
+      "value": 3.496
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1955,
+      "value": 3.533
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1956,
+      "value": 3.635
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1957,
+      "value": 3.714
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1958,
+      "value": 3.758
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1959,
+      "value": 3.756
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1960,
+      "value": 3.74
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1961,
+      "value": 3.698
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1962,
+      "value": 3.547
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1963,
+      "value": 3.41
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1964,
+      "value": 3.274
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1965,
+      "value": 2.992
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1966,
+      "value": 2.768
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1967,
+      "value": 2.599
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1968,
+      "value": 2.499
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1969,
+      "value": 2.49
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1970,
+      "value": 2.491
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1971,
+      "value": 2.297
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1972,
+      "value": 2.045
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1973,
+      "value": 1.914
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1974,
+      "value": 1.866
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1975,
+      "value": 1.813
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1976,
+      "value": 1.782
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1977,
+      "value": 1.816
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1978,
+      "value": 1.792
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1979,
+      "value": 1.826
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1980,
+      "value": 1.84
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1981,
+      "value": 1.825
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1982,
+      "value": 1.831
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1983,
+      "value": 1.804
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1984,
+      "value": 1.804
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1985,
+      "value": 1.828
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1986,
+      "value": 1.825
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1987,
+      "value": 1.853
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1988,
+      "value": 1.907
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1989,
+      "value": 1.977
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1990,
+      "value": 2.034
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1991,
+      "value": 2.025
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1992,
+      "value": 2.008
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1993,
+      "value": 1.979
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1994,
+      "value": 1.959
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1995,
+      "value": 1.936
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1996,
+      "value": 1.928
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1997,
+      "value": 1.917
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1998,
+      "value": 1.938
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 1999,
+      "value": 1.946
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2000,
+      "value": 1.979
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2001,
+      "value": 1.964
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2002,
+      "value": 1.955
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2003,
+      "value": 1.977
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2004,
+      "value": 1.984
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2005,
+      "value": 1.994
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2006,
+      "value": 2.041
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2007,
+      "value": 2.054
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2008,
+      "value": 2.018
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2009,
+      "value": 1.957
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2010,
+      "value": 1.89
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2011,
+      "value": 1.856
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2012,
+      "value": 1.84
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2013,
+      "value": 1.818
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2014,
+      "value": 1.826
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2015,
+      "value": 1.811
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2016,
+      "value": 1.784
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2017,
+      "value": 1.734
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2018,
+      "value": 1.695
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2019,
+      "value": 1.664
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2020,
+      "value": 1.596
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2021,
+      "value": 1.614
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2022,
+      "value": 1.636
+    },
+    {
+      "Entity": "Canada y EUA.",
+      "Year": 2023,
+      "value": 1.597
+    }
+  ],
+  "Latinoamerica y el Caribe": [
+    {
+      "Entity": "Europa",
+      "Year": 1950,
+      "value": 2.7
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1951,
+      "value": 2.66
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1952,
+      "value": 2.645
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1953,
+      "value": 2.622
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1954,
+      "value": 2.626
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1955,
+      "value": 2.624
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1956,
+      "value": 2.61
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1957,
+      "value": 2.614
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1958,
+      "value": 2.597
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1959,
+      "value": 2.603
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1960,
+      "value": 2.592
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1961,
+      "value": 2.57
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1962,
+      "value": 2.519
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1963,
+      "value": 2.517
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1964,
+      "value": 2.493
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1965,
+      "value": 2.436
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1966,
+      "value": 2.42
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1967,
+      "value": 2.417
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1968,
+      "value": 2.372
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1969,
+      "value": 2.326
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1970,
+      "value": 2.283
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1971,
+      "value": 2.272
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1972,
+      "value": 2.213
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1973,
+      "value": 2.139
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1974,
+      "value": 2.128
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1975,
+      "value": 2.069
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1976,
+      "value": 2.034
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1977,
+      "value": 1.994
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1978,
+      "value": 1.962
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1979,
+      "value": 1.942
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1980,
+      "value": 1.928
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1981,
+      "value": 1.89
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1982,
+      "value": 1.886
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1983,
+      "value": 1.884
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1984,
+      "value": 1.857
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1985,
+      "value": 1.834
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1986,
+      "value": 1.852
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1987,
+      "value": 1.844
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1988,
+      "value": 1.82
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1989,
+      "value": 1.76
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1990,
+      "value": 1.722
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1991,
+      "value": 1.656
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1992,
+      "value": 1.587
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1993,
+      "value": 1.516
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1994,
+      "value": 1.486
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1995,
+      "value": 1.452
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1996,
+      "value": 1.44
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1997,
+      "value": 1.426
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1998,
+      "value": 1.415
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1999,
+      "value": 1.397
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2000,
+      "value": 1.41
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2001,
+      "value": 1.401
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2002,
+      "value": 1.418
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2003,
+      "value": 1.443
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2004,
+      "value": 1.465
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2005,
+      "value": 1.462
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2006,
+      "value": 1.49
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2007,
+      "value": 1.535
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2008,
+      "value": 1.593
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2009,
+      "value": 1.601
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2010,
+      "value": 1.606
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2011,
+      "value": 1.587
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2012,
+      "value": 1.612
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2013,
+      "value": 1.592
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2014,
+      "value": 1.608
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2015,
+      "value": 1.605
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2016,
+      "value": 1.611
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2017,
+      "value": 1.557
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2018,
+      "value": 1.522
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2019,
+      "value": 1.486
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2020,
+      "value": 1.465
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2021,
+      "value": 1.473
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2022,
+      "value": 1.41
+    },
+    {
+      "Entity": "Europa",
+      "Year": 2023,
+      "value": 1.395
+    }
+  ],
+  "Canada y EUA.": [
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1950,
+      "value": 5.792
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1951,
+      "value": 5.795
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1952,
+      "value": 5.799
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1953,
+      "value": 5.807
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1954,
+      "value": 5.818
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1955,
+      "value": 5.828
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1956,
+      "value": 5.843
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1957,
+      "value": 5.853
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1958,
+      "value": 5.858
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1959,
+      "value": 5.866
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1960,
+      "value": 5.866
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1961,
+      "value": 5.856
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1962,
+      "value": 5.846
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1963,
+      "value": 5.821
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1964,
+      "value": 5.763
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1965,
+      "value": 5.681
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1966,
+      "value": 5.58
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1967,
+      "value": 5.472
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1968,
+      "value": 5.364
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1969,
+      "value": 5.267
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1970,
+      "value": 5.17
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1971,
+      "value": 5.074
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1972,
+      "value": 4.97
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1973,
+      "value": 4.867
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1974,
+      "value": 4.75
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1975,
+      "value": 4.644
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1976,
+      "value": 4.547
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1977,
+      "value": 4.452
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1978,
+      "value": 4.353
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1979,
+      "value": 4.249
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1980,
+      "value": 4.145
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1981,
+      "value": 4.05
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1982,
+      "value": 3.96
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1983,
+      "value": 3.864
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1984,
+      "value": 3.765
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1985,
+      "value": 3.67
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1986,
+      "value": 3.582
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1987,
+      "value": 3.483
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1988,
+      "value": 3.394
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1989,
+      "value": 3.317
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1990,
+      "value": 3.242
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1991,
+      "value": 3.169
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1992,
+      "value": 3.095
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1993,
+      "value": 3.038
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1994,
+      "value": 2.977
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1995,
+      "value": 2.917
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1996,
+      "value": 2.85
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1997,
+      "value": 2.794
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1998,
+      "value": 2.739
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 1999,
+      "value": 2.674
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2000,
+      "value": 2.609
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2001,
+      "value": 2.543
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2002,
+      "value": 2.482
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2003,
+      "value": 2.423
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2004,
+      "value": 2.381
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2005,
+      "value": 2.342
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2006,
+      "value": 2.297
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2007,
+      "value": 2.259
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2008,
+      "value": 2.232
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2009,
+      "value": 2.208
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2010,
+      "value": 2.181
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2011,
+      "value": 2.164
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2012,
+      "value": 2.135
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2013,
+      "value": 2.113
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2014,
+      "value": 2.096
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2015,
+      "value": 2.066
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2016,
+      "value": 2.015
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2017,
+      "value": 1.991
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2018,
+      "value": 1.973
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2019,
+      "value": 1.928
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2020,
+      "value": 1.869
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2021,
+      "value": 1.845
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2022,
+      "value": 1.824
+    },
+    {
+      "Entity": "Latinoamerica y el Caribe",
+      "Year": 2023,
+      "value": 1.807
+    }
+  ],
+  "Oceania": [
+    {
+      "Entity": "Oceania",
+      "Year": 1950,
+      "value": 3.687
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1951,
+      "value": 3.703
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1952,
+      "value": 3.798
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1953,
+      "value": 3.817
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1954,
+      "value": 3.842
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1955,
+      "value": 3.92
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1956,
+      "value": 3.98
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1957,
+      "value": 4.054
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1958,
+      "value": 4.074
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1959,
+      "value": 4.101
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1960,
+      "value": 4.126
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1961,
+      "value": 4.2
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1962,
+      "value": 4.116
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1963,
+      "value": 4.042
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1964,
+      "value": 3.888
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1965,
+      "value": 3.742
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1966,
+      "value": 3.659
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1967,
+      "value": 3.617
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1968,
+      "value": 3.63
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1969,
+      "value": 3.612
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1970,
+      "value": 3.566
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1971,
+      "value": 3.604
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1972,
+      "value": 3.423
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1973,
+      "value": 3.207
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1974,
+      "value": 3.089
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1975,
+      "value": 2.932
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1976,
+      "value": 2.812
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1977,
+      "value": 2.761
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1978,
+      "value": 2.686
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1979,
+      "value": 2.643
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1980,
+      "value": 2.609
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1981,
+      "value": 2.621
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1982,
+      "value": 2.6
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1983,
+      "value": 2.584
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1984,
+      "value": 2.54
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1985,
+      "value": 2.552
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1986,
+      "value": 2.53
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1987,
+      "value": 2.52
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1988,
+      "value": 2.515
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1989,
+      "value": 2.51
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1990,
+      "value": 2.552
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1991,
+      "value": 2.506
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1992,
+      "value": 2.518
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1993,
+      "value": 2.499
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1994,
+      "value": 2.483
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1995,
+      "value": 2.464
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1996,
+      "value": 2.453
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1997,
+      "value": 2.442
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1998,
+      "value": 2.427
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 1999,
+      "value": 2.442
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2000,
+      "value": 2.447
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2001,
+      "value": 2.432
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2002,
+      "value": 2.441
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2003,
+      "value": 2.444
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2004,
+      "value": 2.456
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2005,
+      "value": 2.488
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2006,
+      "value": 2.509
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2007,
+      "value": 2.581
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2008,
+      "value": 2.591
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2009,
+      "value": 2.542
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2010,
+      "value": 2.524
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2011,
+      "value": 2.49
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2012,
+      "value": 2.485
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2013,
+      "value": 2.438
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2014,
+      "value": 2.375
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2015,
+      "value": 2.364
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2016,
+      "value": 2.333
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2017,
+      "value": 2.282
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2018,
+      "value": 2.258
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2019,
+      "value": 2.199
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2020,
+      "value": 2.14
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2021,
+      "value": 2.168
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2022,
+      "value": 2.157
+    },
+    {
+      "Entity": "Oceania",
+      "Year": 2023,
+      "value": 2.142
+    }
+  ]
+}

@@ -1,1492 +1,1967 @@
 {
-  "Africa": [
+  "América": [
     {
-      "Year": 1950,
-      "value": 37.2455
+      "Entity": "América",
+      "Year": 1800,
+      "value": 34.8
     },
     {
-      "Year": 1951,
-      "value": 37.7751
+      "Entity": "América",
+      "Year": 1830,
+      "value": 34.8
     },
     {
-      "Year": 1952,
-      "value": 38.2546
+      "Entity": "América",
+      "Year": 1850,
+      "value": 35.1
     },
     {
-      "Year": 1953,
-      "value": 38.7309
+      "Entity": "América",
+      "Year": 1870,
+      "value": 35.1
     },
     {
-      "Year": 1954,
-      "value": 39.0876
+      "Entity": "América",
+      "Year": 1900,
+      "value": 41
     },
     {
-      "Year": 1955,
-      "value": 39.5474
+      "Entity": "América",
+      "Year": 1913,
+      "value": 45.1
     },
     {
-      "Year": 1956,
-      "value": 39.9762
-    },
-    {
-      "Year": 1957,
-      "value": 39.8561
-    },
-    {
-      "Year": 1958,
-      "value": 40.2405
-    },
-    {
-      "Year": 1959,
-      "value": 41.194
-    },
-    {
-      "Year": 1960,
-      "value": 41.3961
-    },
-    {
-      "Year": 1961,
-      "value": 41.7756
-    },
-    {
-      "Year": 1962,
-      "value": 42.2531
-    },
-    {
-      "Year": 1963,
-      "value": 42.7175
-    },
-    {
-      "Year": 1964,
-      "value": 43.0898
-    },
-    {
-      "Year": 1965,
-      "value": 43.3551
-    },
-    {
-      "Year": 1966,
-      "value": 43.4601
-    },
-    {
-      "Year": 1967,
-      "value": 43.7471
-    },
-    {
-      "Year": 1968,
-      "value": 44.2523
-    },
-    {
-      "Year": 1969,
-      "value": 44.5077
-    },
-    {
-      "Year": 1970,
-      "value": 44.9859
-    },
-    {
-      "Year": 1971,
-      "value": 45.3999
-    },
-    {
-      "Year": 1972,
-      "value": 45.4595
-    },
-    {
-      "Year": 1973,
-      "value": 46.101
-    },
-    {
-      "Year": 1974,
-      "value": 46.4118
-    },
-    {
-      "Year": 1975,
-      "value": 46.807
-    },
-    {
-      "Year": 1976,
-      "value": 47.5487
-    },
-    {
-      "Year": 1977,
-      "value": 48.0406
-    },
-    {
-      "Year": 1978,
-      "value": 48.4287
-    },
-    {
-      "Year": 1979,
-      "value": 48.9562
-    },
-    {
-      "Year": 1980,
-      "value": 49.4094
-    },
-    {
-      "Year": 1981,
-      "value": 49.8226
-    },
-    {
-      "Year": 1982,
-      "value": 50.2133
-    },
-    {
-      "Year": 1983,
-      "value": 49.5464
-    },
-    {
-      "Year": 1984,
-      "value": 49.7402
-    },
-    {
-      "Year": 1985,
-      "value": 50.1332
-    },
-    {
-      "Year": 1986,
-      "value": 50.5889
-    },
-    {
-      "Year": 1987,
-      "value": 51.1887
-    },
-    {
-      "Year": 1988,
-      "value": 51.0598
-    },
-    {
-      "Year": 1989,
-      "value": 51.7063
-    },
-    {
-      "Year": 1990,
-      "value": 51.6566
-    },
-    {
-      "Year": 1991,
-      "value": 51.4937
-    },
-    {
-      "Year": 1992,
-      "value": 51.4261
-    },
-    {
-      "Year": 1993,
-      "value": 51.8296
-    },
-    {
-      "Year": 1994,
-      "value": 49.9595
-    },
-    {
-      "Year": 1995,
-      "value": 52.3426
-    },
-    {
-      "Year": 1996,
-      "value": 52.3704
-    },
-    {
-      "Year": 1997,
-      "value": 52.5837
-    },
-    {
-      "Year": 1998,
-      "value": 52.3988
-    },
-    {
-      "Year": 1999,
-      "value": 53.0619
-    },
-    {
-      "Year": 2000,
-      "value": 53.667
-    },
-    {
-      "Year": 2001,
-      "value": 54.006
-    },
-    {
-      "Year": 2002,
-      "value": 54.3921
-    },
-    {
-      "Year": 2003,
-      "value": 54.8416
-    },
-    {
-      "Year": 2004,
-      "value": 55.3428
-    },
-    {
-      "Year": 2005,
-      "value": 55.8494
-    },
-    {
-      "Year": 2006,
-      "value": 56.4629
-    },
-    {
-      "Year": 2007,
-      "value": 57.0818
-    },
-    {
-      "Year": 2008,
-      "value": 57.6655
-    },
-    {
-      "Year": 2009,
-      "value": 57.7517
-    },
-    {
-      "Year": 2010,
-      "value": 58.7703
-    },
-    {
-      "Year": 2011,
-      "value": 58.9598
-    },
-    {
-      "Year": 2012,
-      "value": 59.8046
-    },
-    {
-      "Year": 2013,
-      "value": 60.2673
-    },
-    {
-      "Year": 2014,
-      "value": 60.4728
-    },
-    {
-      "Year": 2015,
-      "value": 60.8437
-    },
-    {
-      "Year": 2016,
-      "value": 61.2078
-    },
-    {
-      "Year": 2017,
-      "value": 61.514
-    },
-    {
-      "Year": 2018,
-      "value": 62.1674
-    },
-    {
-      "Year": 2019,
-      "value": 62.449
-    },
-    {
-      "Year": 2020,
-      "value": 62.2572
-    },
-    {
-      "Year": 2021,
-      "value": 61.7866
-    },
-    {
-      "Year": 2022,
-      "value": 62.9205
-    },
-    {
-      "Year": 2023,
-      "value": 63.8428
-    }
-  ],
-  "Americas": [
-    {
+      "Entity": "América",
       "Year": 1950,
       "value": 56.5028
     },
     {
+      "Entity": "América",
       "Year": 1951,
       "value": 56.9204
     },
     {
+      "Entity": "América",
       "Year": 1952,
       "value": 57.402
     },
     {
+      "Entity": "América",
       "Year": 1953,
       "value": 57.906
     },
     {
+      "Entity": "América",
       "Year": 1954,
       "value": 58.6525
     },
     {
+      "Entity": "América",
       "Year": 1955,
       "value": 58.9932
     },
     {
+      "Entity": "América",
       "Year": 1956,
       "value": 59.3801
     },
     {
+      "Entity": "América",
       "Year": 1957,
       "value": 59.6062
     },
     {
+      "Entity": "América",
       "Year": 1958,
       "value": 60.0883
     },
     {
+      "Entity": "América",
       "Year": 1959,
       "value": 60.5007
     },
     {
+      "Entity": "América",
       "Year": 1960,
       "value": 60.7932
     },
     {
+      "Entity": "América",
       "Year": 1961,
       "value": 61.2684
     },
     {
+      "Entity": "América",
       "Year": 1962,
       "value": 61.4211
     },
     {
+      "Entity": "América",
       "Year": 1963,
       "value": 61.5399
     },
     {
+      "Entity": "América",
       "Year": 1964,
       "value": 61.9124
     },
     {
+      "Entity": "América",
       "Year": 1965,
       "value": 62.1123
     },
     {
+      "Entity": "América",
       "Year": 1966,
       "value": 62.3322
     },
     {
+      "Entity": "América",
       "Year": 1967,
       "value": 62.67
     },
     {
+      "Entity": "América",
       "Year": 1968,
       "value": 62.7056
     },
     {
+      "Entity": "América",
       "Year": 1969,
       "value": 63.0295
     },
     {
+      "Entity": "América",
       "Year": 1970,
       "value": 63.1495
     },
     {
+      "Entity": "América",
       "Year": 1971,
       "value": 63.8157
     },
     {
+      "Entity": "América",
       "Year": 1972,
       "value": 64.0001
     },
     {
+      "Entity": "América",
       "Year": 1973,
       "value": 64.3473
     },
     {
+      "Entity": "América",
       "Year": 1974,
       "value": 64.8219
     },
     {
+      "Entity": "América",
       "Year": 1975,
       "value": 65.4098
     },
     {
+      "Entity": "América",
       "Year": 1976,
       "value": 65.7058
     },
     {
+      "Entity": "América",
       "Year": 1977,
       "value": 66.2896
     },
     {
+      "Entity": "América",
       "Year": 1978,
       "value": 66.6343
     },
     {
+      "Entity": "América",
       "Year": 1979,
       "value": 67.0668
     },
     {
+      "Entity": "América",
       "Year": 1980,
       "value": 67.247
     },
     {
+      "Entity": "América",
       "Year": 1981,
       "value": 67.6911
     },
     {
+      "Entity": "América",
       "Year": 1982,
       "value": 68.0177
     },
     {
+      "Entity": "América",
       "Year": 1983,
       "value": 68.4306
     },
     {
+      "Entity": "América",
       "Year": 1984,
       "value": 68.7457
     },
     {
+      "Entity": "América",
       "Year": 1985,
       "value": 68.8882
     },
     {
+      "Entity": "América",
       "Year": 1986,
       "value": 69.3281
     },
     {
+      "Entity": "América",
       "Year": 1987,
       "value": 69.6289
     },
     {
+      "Entity": "América",
       "Year": 1988,
       "value": 69.8726
     },
     {
+      "Entity": "América",
       "Year": 1989,
       "value": 70.2467
     },
     {
+      "Entity": "América",
       "Year": 1990,
       "value": 70.5909
     },
     {
+      "Entity": "América",
       "Year": 1991,
       "value": 70.8608
     },
     {
+      "Entity": "América",
       "Year": 1992,
       "value": 71.146
     },
     {
+      "Entity": "América",
       "Year": 1993,
       "value": 71.251
     },
     {
+      "Entity": "América",
       "Year": 1994,
       "value": 71.5582
     },
     {
+      "Entity": "América",
       "Year": 1995,
       "value": 71.8289
     },
     {
+      "Entity": "América",
       "Year": 1996,
       "value": 72.1831
     },
     {
+      "Entity": "América",
       "Year": 1997,
       "value": 72.5468
     },
     {
+      "Entity": "América",
       "Year": 1998,
       "value": 72.7124
     },
     {
+      "Entity": "América",
       "Year": 1999,
       "value": 72.981
     },
     {
+      "Entity": "América",
       "Year": 2000,
       "value": 73.247
     },
     {
+      "Entity": "América",
       "Year": 2001,
       "value": 73.4795
     },
     {
+      "Entity": "América",
       "Year": 2002,
       "value": 73.758
     },
     {
+      "Entity": "América",
       "Year": 2003,
       "value": 74.0244
     },
     {
+      "Entity": "América",
       "Year": 2004,
       "value": 74.3916
     },
     {
+      "Entity": "América",
       "Year": 2005,
       "value": 74.6213
     },
     {
+      "Entity": "América",
       "Year": 2006,
       "value": 74.9224
     },
     {
+      "Entity": "América",
       "Year": 2007,
       "value": 75.1515
     },
     {
+      "Entity": "América",
       "Year": 2008,
       "value": 75.2986
     },
     {
+      "Entity": "América",
       "Year": 2009,
       "value": 75.5602
     },
     {
+      "Entity": "América",
       "Year": 2010,
       "value": 75.4472
     },
     {
+      "Entity": "América",
       "Year": 2011,
       "value": 75.9343
     },
     {
+      "Entity": "América",
       "Year": 2012,
       "value": 76.1301
     },
     {
+      "Entity": "América",
       "Year": 2013,
       "value": 76.2643
     },
     {
+      "Entity": "América",
       "Year": 2014,
       "value": 76.4082
     },
     {
+      "Entity": "América",
       "Year": 2015,
       "value": 76.472
     },
     {
+      "Entity": "América",
       "Year": 2016,
       "value": 76.4312
     },
     {
+      "Entity": "América",
       "Year": 2017,
       "value": 76.5049
     },
     {
+      "Entity": "América",
       "Year": 2018,
       "value": 76.6965
     },
     {
+      "Entity": "América",
       "Year": 2019,
       "value": 76.857
     },
     {
+      "Entity": "América",
       "Year": 2020,
       "value": 74.9717
     },
     {
+      "Entity": "América",
       "Year": 2021,
       "value": 73.8796
     },
     {
+      "Entity": "América",
       "Year": 2022,
       "value": 76.1444
     },
     {
+      "Entity": "América",
       "Year": 2023,
       "value": 77.2922
     }
   ],
   "Asia": [
     {
+      "Entity": "Asia",
+      "Year": 1800,
+      "value": 27.5
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1885,
+      "value": 27.5
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1900,
+      "value": 28
+    },
+    {
+      "Entity": "Asia",
+      "Year": 1913,
+      "value": 28.1
+    },
+    {
+      "Entity": "Asia",
       "Year": 1950,
       "value": 41.9565
     },
     {
+      "Entity": "Asia",
       "Year": 1951,
       "value": 42.9587
     },
     {
+      "Entity": "Asia",
       "Year": 1952,
       "value": 44.2413
     },
     {
+      "Entity": "Asia",
       "Year": 1953,
       "value": 44.8721
     },
     {
+      "Entity": "Asia",
       "Year": 1954,
       "value": 45.8386
     },
     {
+      "Entity": "Asia",
       "Year": 1955,
       "value": 46.432
     },
     {
+      "Entity": "Asia",
       "Year": 1956,
       "value": 46.9368
     },
     {
+      "Entity": "Asia",
       "Year": 1957,
       "value": 47.4357
     },
     {
+      "Entity": "Asia",
       "Year": 1958,
       "value": 47.9095
     },
     {
+      "Entity": "Asia",
       "Year": 1959,
       "value": 44.5468
     },
     {
+      "Entity": "Asia",
       "Year": 1960,
       "value": 41.7925
     },
     {
+      "Entity": "Asia",
       "Year": 1961,
       "value": 45.2247
     },
     {
+      "Entity": "Asia",
       "Year": 1962,
       "value": 49.7055
     },
     {
+      "Entity": "Asia",
       "Year": 1963,
       "value": 50.4126
     },
     {
+      "Entity": "Asia",
       "Year": 1964,
       "value": 51.0484
     },
     {
+      "Entity": "Asia",
       "Year": 1965,
       "value": 50.6535
     },
     {
+      "Entity": "Asia",
       "Year": 1966,
       "value": 51.5076
     },
     {
+      "Entity": "Asia",
       "Year": 1967,
       "value": 52.2273
     },
     {
+      "Entity": "Asia",
       "Year": 1968,
       "value": 53.1207
     },
     {
+      "Entity": "Asia",
       "Year": 1969,
       "value": 53.7511
     },
     {
+      "Entity": "Asia",
       "Year": 1970,
       "value": 54.0354
     },
     {
+      "Entity": "Asia",
       "Year": 1971,
       "value": 53.4391
     },
     {
+      "Entity": "Asia",
       "Year": 1972,
       "value": 55.3185
     },
     {
+      "Entity": "Asia",
       "Year": 1973,
       "value": 55.9264
     },
     {
+      "Entity": "Asia",
       "Year": 1974,
       "value": 56.3798
     },
     {
+      "Entity": "Asia",
       "Year": 1975,
       "value": 56.6093
     },
     {
+      "Entity": "Asia",
       "Year": 1976,
       "value": 56.9165
     },
     {
+      "Entity": "Asia",
       "Year": 1977,
       "value": 57.6246
     },
     {
+      "Entity": "Asia",
       "Year": 1978,
       "value": 58.1127
     },
     {
+      "Entity": "Asia",
       "Year": 1979,
       "value": 58.9967
     },
     {
+      "Entity": "Asia",
       "Year": 1980,
       "value": 59.4646
     },
     {
+      "Entity": "Asia",
       "Year": 1981,
       "value": 59.9625
     },
     {
+      "Entity": "Asia",
       "Year": 1982,
       "value": 60.4664
     },
     {
+      "Entity": "Asia",
       "Year": 1983,
       "value": 60.9438
     },
     {
+      "Entity": "Asia",
       "Year": 1984,
       "value": 61.4058
     },
     {
+      "Entity": "Asia",
       "Year": 1985,
       "value": 61.8581
     },
     {
+      "Entity": "Asia",
       "Year": 1986,
       "value": 62.3815
     },
     {
+      "Entity": "Asia",
       "Year": 1987,
       "value": 62.8528
     },
     {
+      "Entity": "Asia",
       "Year": 1988,
       "value": 63.2107
     },
     {
+      "Entity": "Asia",
       "Year": 1989,
       "value": 63.6586
     },
     {
+      "Entity": "Asia",
       "Year": 1990,
       "value": 63.964
     },
     {
+      "Entity": "Asia",
       "Year": 1991,
       "value": 64.2319
     },
     {
+      "Entity": "Asia",
       "Year": 1992,
       "value": 64.7101
     },
     {
+      "Entity": "Asia",
       "Year": 1993,
       "value": 65.0765
     },
     {
+      "Entity": "Asia",
       "Year": 1994,
       "value": 65.3933
     },
     {
+      "Entity": "Asia",
       "Year": 1995,
       "value": 65.6984
     },
     {
+      "Entity": "Asia",
       "Year": 1996,
       "value": 66.0972
     },
     {
+      "Entity": "Asia",
       "Year": 1997,
       "value": 66.4603
     },
     {
+      "Entity": "Asia",
       "Year": 1998,
       "value": 66.8211
     },
     {
+      "Entity": "Asia",
       "Year": 1999,
       "value": 67.1659
     },
     {
+      "Entity": "Asia",
       "Year": 2000,
       "value": 67.6072
     },
     {
+      "Entity": "Asia",
       "Year": 2001,
       "value": 67.994
     },
     {
+      "Entity": "Asia",
       "Year": 2002,
       "value": 68.4026
     },
     {
+      "Entity": "Asia",
       "Year": 2003,
       "value": 68.7985
     },
     {
+      "Entity": "Asia",
       "Year": 2004,
       "value": 69.0323
     },
     {
+      "Entity": "Asia",
       "Year": 2005,
       "value": 69.497
     },
     {
+      "Entity": "Asia",
       "Year": 2006,
       "value": 69.9086
     },
     {
+      "Entity": "Asia",
       "Year": 2007,
       "value": 70.3012
     },
     {
+      "Entity": "Asia",
       "Year": 2008,
       "value": 70.5006
     },
     {
+      "Entity": "Asia",
       "Year": 2009,
       "value": 71.0089
     },
     {
+      "Entity": "Asia",
       "Year": 2010,
       "value": 71.3792
     },
     {
+      "Entity": "Asia",
       "Year": 2011,
       "value": 71.6838
     },
     {
+      "Entity": "Asia",
       "Year": 2012,
       "value": 72.042
     },
     {
+      "Entity": "Asia",
       "Year": 2013,
       "value": 72.3591
     },
     {
+      "Entity": "Asia",
       "Year": 2014,
       "value": 72.7056
     },
     {
+      "Entity": "Asia",
       "Year": 2015,
       "value": 72.9697
     },
     {
+      "Entity": "Asia",
       "Year": 2016,
       "value": 73.2724
     },
     {
+      "Entity": "Asia",
       "Year": 2017,
       "value": 73.4919
     },
     {
+      "Entity": "Asia",
       "Year": 2018,
       "value": 73.7937
     },
     {
+      "Entity": "Asia",
       "Year": 2019,
       "value": 74.0468
     },
     {
+      "Entity": "Asia",
       "Year": 2020,
       "value": 73.6064
     },
     {
+      "Entity": "Asia",
       "Year": 2021,
       "value": 72.3714
     },
     {
+      "Entity": "Asia",
       "Year": 2022,
       "value": 74.4278
     },
     {
+      "Entity": "Asia",
       "Year": 2023,
       "value": 74.5661
     }
   ],
-  "Europe": [
+  "Europa": [
     {
+      "Entity": "Europa",
+      "Year": 1800,
+      "value": 33.3
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1820,
+      "value": 35.6
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1850,
+      "value": 36.3
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1870,
+      "value": 36.2
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1900,
+      "value": 42.7
+    },
+    {
+      "Entity": "Europa",
+      "Year": 1913,
+      "value": 46.8
+    },
+    {
+      "Entity": "Europa",
       "Year": 1950,
       "value": 61.9599
     },
     {
+      "Entity": "Europa",
       "Year": 1951,
       "value": 61.8892
     },
     {
+      "Entity": "Europa",
       "Year": 1952,
       "value": 63.2871
     },
     {
+      "Entity": "Europa",
       "Year": 1953,
       "value": 64.0541
     },
     {
+      "Entity": "Europa",
       "Year": 1954,
       "value": 64.8764
     },
     {
+      "Entity": "Europa",
       "Year": 1955,
       "value": 65.6481
     },
     {
+      "Entity": "Europa",
       "Year": 1956,
       "value": 66.8002
     },
     {
+      "Entity": "Europa",
       "Year": 1957,
       "value": 66.9821
     },
     {
+      "Entity": "Europa",
       "Year": 1958,
       "value": 68.0391
     },
     {
+      "Entity": "Europa",
       "Year": 1959,
       "value": 68.26
     },
     {
+      "Entity": "Europa",
       "Year": 1960,
       "value": 68.7123
     },
     {
+      "Entity": "Europa",
       "Year": 1961,
       "value": 69.171
     },
     {
+      "Entity": "Europa",
       "Year": 1962,
       "value": 69.1437
     },
     {
+      "Entity": "Europa",
       "Year": 1963,
       "value": 69.3934
     },
     {
+      "Entity": "Europa",
       "Year": 1964,
       "value": 70.0254
     },
     {
+      "Entity": "Europa",
       "Year": 1965,
       "value": 70.0373
     },
     {
+      "Entity": "Europa",
       "Year": 1966,
       "value": 70.2353
     },
     {
+      "Entity": "Europa",
       "Year": 1967,
       "value": 70.3162
     },
     {
+      "Entity": "Europa",
       "Year": 1968,
       "value": 70.1489
     },
     {
+      "Entity": "Europa",
       "Year": 1969,
       "value": 69.9561
     },
     {
+      "Entity": "Europa",
       "Year": 1970,
       "value": 70.286
     },
     {
+      "Entity": "Europa",
       "Year": 1971,
       "value": 70.4677
     },
     {
+      "Entity": "Europa",
       "Year": 1972,
       "value": 70.6855
     },
     {
+      "Entity": "Europa",
       "Year": 1973,
       "value": 70.7999
     },
     {
+      "Entity": "Europa",
       "Year": 1974,
       "value": 70.9586
     },
     {
+      "Entity": "Europa",
       "Year": 1975,
       "value": 70.872
     },
     {
+      "Entity": "Europa",
       "Year": 1976,
       "value": 70.958
     },
     {
+      "Entity": "Europa",
       "Year": 1977,
       "value": 71.1587
     },
     {
+      "Entity": "Europa",
       "Year": 1978,
       "value": 71.1905
     },
     {
+      "Entity": "Europa",
       "Year": 1979,
       "value": 71.2803
     },
     {
+      "Entity": "Europa",
       "Year": 1980,
       "value": 71.3419
     },
     {
+      "Entity": "Europa",
       "Year": 1981,
       "value": 71.5498
     },
     {
+      "Entity": "Europa",
       "Year": 1982,
       "value": 71.8728
     },
     {
+      "Entity": "Europa",
       "Year": 1983,
       "value": 71.8697
     },
     {
+      "Entity": "Europa",
       "Year": 1984,
       "value": 72.0095
     },
     {
+      "Entity": "Europa",
       "Year": 1985,
       "value": 72.2292
     },
     {
+      "Entity": "Europa",
       "Year": 1986,
       "value": 72.8307
     },
     {
+      "Entity": "Europa",
       "Year": 1987,
       "value": 73.08
     },
     {
+      "Entity": "Europa",
       "Year": 1988,
       "value": 73.154
     },
     {
+      "Entity": "Europa",
       "Year": 1989,
       "value": 73.2036
     },
     {
+      "Entity": "Europa",
       "Year": 1990,
       "value": 73.1225
     },
     {
+      "Entity": "Europa",
       "Year": 1991,
       "value": 73.0863
     },
     {
+      "Entity": "Europa",
       "Year": 1992,
       "value": 72.7633
     },
     {
+      "Entity": "Europa",
       "Year": 1993,
       "value": 72.1081
     },
     {
+      "Entity": "Europa",
       "Year": 1994,
       "value": 72.0386
     },
     {
+      "Entity": "Europa",
       "Year": 1995,
       "value": 72.1815
     },
     {
+      "Entity": "Europa",
       "Year": 1996,
       "value": 72.7397
     },
     {
+      "Entity": "Europa",
       "Year": 1997,
       "value": 73.2985
     },
     {
+      "Entity": "Europa",
       "Year": 1998,
       "value": 73.555
     },
     {
+      "Entity": "Europa",
       "Year": 1999,
       "value": 73.319
     },
     {
+      "Entity": "Europa",
       "Year": 2000,
       "value": 73.4418
     },
     {
+      "Entity": "Europa",
       "Year": 2001,
       "value": 73.6194
     },
     {
+      "Entity": "Europa",
       "Year": 2002,
       "value": 73.6257
     },
     {
+      "Entity": "Europa",
       "Year": 2003,
       "value": 73.6757
     },
     {
+      "Entity": "Europa",
       "Year": 2004,
       "value": 74.1495
     },
     {
+      "Entity": "Europa",
       "Year": 2005,
       "value": 74.2867
     },
     {
+      "Entity": "Europa",
       "Year": 2006,
       "value": 74.9033
     },
     {
+      "Entity": "Europa",
       "Year": 2007,
       "value": 75.3079
     },
     {
+      "Entity": "Europa",
       "Year": 2008,
       "value": 75.6092
     },
     {
+      "Entity": "Europa",
       "Year": 2009,
       "value": 76.0592
     },
     {
+      "Entity": "Europa",
       "Year": 2010,
       "value": 76.2025
     },
     {
+      "Entity": "Europa",
       "Year": 2011,
       "value": 76.8703
     },
     {
+      "Entity": "Europa",
       "Year": 2012,
       "value": 77.0615
     },
     {
+      "Entity": "Europa",
       "Year": 2013,
       "value": 77.4116
     },
     {
+      "Entity": "Europa",
       "Year": 2014,
       "value": 77.6754
     },
     {
+      "Entity": "Europa",
       "Year": 2015,
       "value": 77.7767
     },
     {
+      "Entity": "Europa",
       "Year": 2016,
       "value": 78.1705
     },
     {
+      "Entity": "Europa",
       "Year": 2017,
       "value": 78.4613
     },
     {
+      "Entity": "Europa",
       "Year": 2018,
       "value": 78.5281
     },
     {
+      "Entity": "Europa",
       "Year": 2019,
       "value": 78.7588
     },
     {
+      "Entity": "Europa",
       "Year": 2020,
       "value": 77.6514
     },
     {
+      "Entity": "Europa",
       "Year": 2021,
       "value": 77.0357
     },
     {
+      "Entity": "Europa",
       "Year": 2022,
       "value": 78.1827
     },
     {
+      "Entity": "Europa",
       "Year": 2023,
       "value": 79.0594
     }
   ],
-  "Oceania": [
+  "Oceanía": [
     {
+      "Entity": "Oceanía",
+      "Year": 1870,
+      "value": 34.7
+    },
+    {
+      "Entity": "Oceanía",
+      "Year": 1900,
+      "value": 47.6
+    },
+    {
+      "Entity": "Oceanía",
+      "Year": 1913,
+      "value": 51
+    },
+    {
+      "Entity": "Oceanía",
       "Year": 1950,
       "value": 61.5595
     },
     {
+      "Entity": "Oceanía",
       "Year": 1951,
       "value": 60.4452
     },
     {
+      "Entity": "Oceanía",
       "Year": 1952,
       "value": 62.1313
     },
     {
+      "Entity": "Oceanía",
       "Year": 1953,
       "value": 62.7852
     },
     {
+      "Entity": "Oceanía",
       "Year": 1954,
       "value": 63.0748
     },
     {
+      "Entity": "Oceanía",
       "Year": 1955,
       "value": 63.4949
     },
     {
+      "Entity": "Oceanía",
       "Year": 1956,
       "value": 63.6161
     },
     {
+      "Entity": "Oceanía",
       "Year": 1957,
       "value": 63.9981
     },
     {
+      "Entity": "Oceanía",
       "Year": 1958,
       "value": 64.6121
     },
     {
+      "Entity": "Oceanía",
       "Year": 1959,
       "value": 64.5221
     },
     {
+      "Entity": "Oceanía",
       "Year": 1960,
       "value": 65.0379
     },
     {
+      "Entity": "Oceanía",
       "Year": 1961,
       "value": 65.3832
     },
     {
+      "Entity": "Oceanía",
       "Year": 1962,
       "value": 65.3567
     },
     {
+      "Entity": "Oceanía",
       "Year": 1963,
       "value": 65.6305
     },
     {
+      "Entity": "Oceanía",
       "Year": 1964,
       "value": 65.4632
     },
     {
+      "Entity": "Oceanía",
       "Year": 1965,
       "value": 65.7838
     },
     {
+      "Entity": "Oceanía",
       "Year": 1966,
       "value": 65.8103
     },
     {
+      "Entity": "Oceanía",
       "Year": 1967,
       "value": 66.2996
     },
     {
+      "Entity": "Oceanía",
       "Year": 1968,
       "value": 66.2088
     },
     {
+      "Entity": "Oceanía",
       "Year": 1969,
       "value": 66.7074
     },
     {
+      "Entity": "Oceanía",
       "Year": 1970,
       "value": 66.5796
     },
     {
+      "Entity": "Oceanía",
       "Year": 1971,
       "value": 67.3935
     },
     {
+      "Entity": "Oceanía",
       "Year": 1972,
       "value": 67.749
     },
     {
+      "Entity": "Oceanía",
       "Year": 1973,
       "value": 67.9813
     },
     {
+      "Entity": "Oceanía",
       "Year": 1974,
       "value": 68.0113
     },
     {
+      "Entity": "Oceanía",
       "Year": 1975,
       "value": 68.7236
     },
     {
+      "Entity": "Oceanía",
       "Year": 1976,
       "value": 68.844
     },
     {
+      "Entity": "Oceanía",
       "Year": 1977,
       "value": 69.3657
     },
     {
+      "Entity": "Oceanía",
       "Year": 1978,
       "value": 69.7675
     },
     {
+      "Entity": "Oceanía",
       "Year": 1979,
       "value": 70.2129
     },
     {
+      "Entity": "Oceanía",
       "Year": 1980,
       "value": 70.4159
     },
     {
+      "Entity": "Oceanía",
       "Year": 1981,
       "value": 70.7848
     },
     {
+      "Entity": "Oceanía",
       "Year": 1982,
       "value": 70.8354
     },
     {
+      "Entity": "Oceanía",
       "Year": 1983,
       "value": 71.4012
     },
     {
+      "Entity": "Oceanía",
       "Year": 1984,
       "value": 71.5888
     },
     {
+      "Entity": "Oceanía",
       "Year": 1985,
       "value": 71.549
     },
     {
+      "Entity": "Oceanía",
       "Year": 1986,
       "value": 72.0337
     },
     {
+      "Entity": "Oceanía",
       "Year": 1987,
       "value": 72.1179
     },
     {
+      "Entity": "Oceanía",
       "Year": 1988,
       "value": 72.397
     },
     {
+      "Entity": "Oceanía",
       "Year": 1989,
       "value": 72.4276
     },
     {
+      "Entity": "Oceanía",
       "Year": 1990,
       "value": 73.1192
     },
     {
+      "Entity": "Oceanía",
       "Year": 1991,
       "value": 73.5037
     },
     {
+      "Entity": "Oceanía",
       "Year": 1992,
       "value": 73.5624
     },
     {
+      "Entity": "Oceanía",
       "Year": 1993,
       "value": 73.9415
     },
     {
+      "Entity": "Oceanía",
       "Year": 1994,
       "value": 73.9052
     },
     {
+      "Entity": "Oceanía",
       "Year": 1995,
       "value": 74.1626
     },
     {
+      "Entity": "Oceanía",
       "Year": 1996,
       "value": 74.2112
     },
     {
+      "Entity": "Oceanía",
       "Year": 1997,
       "value": 74.4624
     },
     {
+      "Entity": "Oceanía",
       "Year": 1998,
       "value": 74.5577
     },
     {
+      "Entity": "Oceanía",
       "Year": 1999,
       "value": 74.9382
     },
     {
+      "Entity": "Oceanía",
       "Year": 2000,
       "value": 75.2237
     },
     {
+      "Entity": "Oceanía",
       "Year": 2001,
       "value": 75.4182
     },
     {
+      "Entity": "Oceanía",
       "Year": 2002,
       "value": 75.4028
     },
     {
+      "Entity": "Oceanía",
       "Year": 2003,
       "value": 75.6917
     },
     {
+      "Entity": "Oceanía",
       "Year": 2004,
       "value": 75.8982
     },
     {
+      "Entity": "Oceanía",
       "Year": 2005,
       "value": 76.2345
     },
     {
+      "Entity": "Oceanía",
       "Year": 2006,
       "value": 76.3552
     },
     {
+      "Entity": "Oceanía",
       "Year": 2007,
       "value": 76.4053
     },
     {
+      "Entity": "Oceanía",
       "Year": 2008,
       "value": 76.6292
     },
     {
+      "Entity": "Oceanía",
       "Year": 2009,
       "value": 76.8951
     },
     {
+      "Entity": "Oceanía",
       "Year": 2010,
       "value": 77.2291
     },
     {
+      "Entity": "Oceanía",
       "Year": 2011,
       "value": 77.3077
     },
     {
+      "Entity": "Oceanía",
       "Year": 2012,
       "value": 77.485
     },
     {
+      "Entity": "Oceanía",
       "Year": 2013,
       "value": 77.7918
     },
     {
+      "Entity": "Oceanía",
       "Year": 2014,
       "value": 77.782
     },
     {
+      "Entity": "Oceanía",
       "Year": 2015,
       "value": 77.925
     },
     {
+      "Entity": "Oceanía",
       "Year": 2016,
       "value": 78.1608
     },
     {
+      "Entity": "Oceanía",
       "Year": 2017,
       "value": 78.1272
     },
     {
+      "Entity": "Oceanía",
       "Year": 2018,
       "value": 78.5383
     },
     {
+      "Entity": "Oceanía",
       "Year": 2019,
       "value": 78.5668
     },
     {
+      "Entity": "Oceanía",
       "Year": 2020,
       "value": 78.8495
     },
     {
+      "Entity": "Oceanía",
       "Year": 2021,
       "value": 78.4519
     },
     {
+      "Entity": "Oceanía",
       "Year": 2022,
       "value": 78.0631
     },
     {
+      "Entity": "Oceanía",
       "Year": 2023,
       "value": 79.1464
+    }
+  ],
+  "África": [
+    {
+      "Entity": "África",
+      "Year": 1800,
+      "value": 26.4
+    },
+    {
+      "Entity": "África",
+      "Year": 1925,
+      "value": 26.4
+    },
+    {
+      "Entity": "África",
+      "Year": 1950,
+      "value": 37.2455
+    },
+    {
+      "Entity": "África",
+      "Year": 1951,
+      "value": 37.7751
+    },
+    {
+      "Entity": "África",
+      "Year": 1952,
+      "value": 38.2546
+    },
+    {
+      "Entity": "África",
+      "Year": 1953,
+      "value": 38.7309
+    },
+    {
+      "Entity": "África",
+      "Year": 1954,
+      "value": 39.0876
+    },
+    {
+      "Entity": "África",
+      "Year": 1955,
+      "value": 39.5474
+    },
+    {
+      "Entity": "África",
+      "Year": 1956,
+      "value": 39.9762
+    },
+    {
+      "Entity": "África",
+      "Year": 1957,
+      "value": 39.8561
+    },
+    {
+      "Entity": "África",
+      "Year": 1958,
+      "value": 40.2405
+    },
+    {
+      "Entity": "África",
+      "Year": 1959,
+      "value": 41.194
+    },
+    {
+      "Entity": "África",
+      "Year": 1960,
+      "value": 41.3961
+    },
+    {
+      "Entity": "África",
+      "Year": 1961,
+      "value": 41.7756
+    },
+    {
+      "Entity": "África",
+      "Year": 1962,
+      "value": 42.2531
+    },
+    {
+      "Entity": "África",
+      "Year": 1963,
+      "value": 42.7175
+    },
+    {
+      "Entity": "África",
+      "Year": 1964,
+      "value": 43.0898
+    },
+    {
+      "Entity": "África",
+      "Year": 1965,
+      "value": 43.3551
+    },
+    {
+      "Entity": "África",
+      "Year": 1966,
+      "value": 43.4601
+    },
+    {
+      "Entity": "África",
+      "Year": 1967,
+      "value": 43.7471
+    },
+    {
+      "Entity": "África",
+      "Year": 1968,
+      "value": 44.2523
+    },
+    {
+      "Entity": "África",
+      "Year": 1969,
+      "value": 44.5077
+    },
+    {
+      "Entity": "África",
+      "Year": 1970,
+      "value": 44.9859
+    },
+    {
+      "Entity": "África",
+      "Year": 1971,
+      "value": 45.3999
+    },
+    {
+      "Entity": "África",
+      "Year": 1972,
+      "value": 45.4595
+    },
+    {
+      "Entity": "África",
+      "Year": 1973,
+      "value": 46.101
+    },
+    {
+      "Entity": "África",
+      "Year": 1974,
+      "value": 46.4118
+    },
+    {
+      "Entity": "África",
+      "Year": 1975,
+      "value": 46.807
+    },
+    {
+      "Entity": "África",
+      "Year": 1976,
+      "value": 47.5487
+    },
+    {
+      "Entity": "África",
+      "Year": 1977,
+      "value": 48.0406
+    },
+    {
+      "Entity": "África",
+      "Year": 1978,
+      "value": 48.4287
+    },
+    {
+      "Entity": "África",
+      "Year": 1979,
+      "value": 48.9562
+    },
+    {
+      "Entity": "África",
+      "Year": 1980,
+      "value": 49.4094
+    },
+    {
+      "Entity": "África",
+      "Year": 1981,
+      "value": 49.8226
+    },
+    {
+      "Entity": "África",
+      "Year": 1982,
+      "value": 50.2133
+    },
+    {
+      "Entity": "África",
+      "Year": 1983,
+      "value": 49.5464
+    },
+    {
+      "Entity": "África",
+      "Year": 1984,
+      "value": 49.7402
+    },
+    {
+      "Entity": "África",
+      "Year": 1985,
+      "value": 50.1332
+    },
+    {
+      "Entity": "África",
+      "Year": 1986,
+      "value": 50.5889
+    },
+    {
+      "Entity": "África",
+      "Year": 1987,
+      "value": 51.1887
+    },
+    {
+      "Entity": "África",
+      "Year": 1988,
+      "value": 51.0598
+    },
+    {
+      "Entity": "África",
+      "Year": 1989,
+      "value": 51.7063
+    },
+    {
+      "Entity": "África",
+      "Year": 1990,
+      "value": 51.6566
+    },
+    {
+      "Entity": "África",
+      "Year": 1991,
+      "value": 51.4937
+    },
+    {
+      "Entity": "África",
+      "Year": 1992,
+      "value": 51.4261
+    },
+    {
+      "Entity": "África",
+      "Year": 1993,
+      "value": 51.8296
+    },
+    {
+      "Entity": "África",
+      "Year": 1994,
+      "value": 49.9595
+    },
+    {
+      "Entity": "África",
+      "Year": 1995,
+      "value": 52.3426
+    },
+    {
+      "Entity": "África",
+      "Year": 1996,
+      "value": 52.3704
+    },
+    {
+      "Entity": "África",
+      "Year": 1997,
+      "value": 52.5837
+    },
+    {
+      "Entity": "África",
+      "Year": 1998,
+      "value": 52.3988
+    },
+    {
+      "Entity": "África",
+      "Year": 1999,
+      "value": 53.0619
+    },
+    {
+      "Entity": "África",
+      "Year": 2000,
+      "value": 53.667
+    },
+    {
+      "Entity": "África",
+      "Year": 2001,
+      "value": 54.006
+    },
+    {
+      "Entity": "África",
+      "Year": 2002,
+      "value": 54.3921
+    },
+    {
+      "Entity": "África",
+      "Year": 2003,
+      "value": 54.8416
+    },
+    {
+      "Entity": "África",
+      "Year": 2004,
+      "value": 55.3428
+    },
+    {
+      "Entity": "África",
+      "Year": 2005,
+      "value": 55.8494
+    },
+    {
+      "Entity": "África",
+      "Year": 2006,
+      "value": 56.4629
+    },
+    {
+      "Entity": "África",
+      "Year": 2007,
+      "value": 57.0818
+    },
+    {
+      "Entity": "África",
+      "Year": 2008,
+      "value": 57.6655
+    },
+    {
+      "Entity": "África",
+      "Year": 2009,
+      "value": 57.7517
+    },
+    {
+      "Entity": "África",
+      "Year": 2010,
+      "value": 58.7703
+    },
+    {
+      "Entity": "África",
+      "Year": 2011,
+      "value": 58.9598
+    },
+    {
+      "Entity": "África",
+      "Year": 2012,
+      "value": 59.8046
+    },
+    {
+      "Entity": "África",
+      "Year": 2013,
+      "value": 60.2673
+    },
+    {
+      "Entity": "África",
+      "Year": 2014,
+      "value": 60.4728
+    },
+    {
+      "Entity": "África",
+      "Year": 2015,
+      "value": 60.8437
+    },
+    {
+      "Entity": "África",
+      "Year": 2016,
+      "value": 61.2078
+    },
+    {
+      "Entity": "África",
+      "Year": 2017,
+      "value": 61.514
+    },
+    {
+      "Entity": "África",
+      "Year": 2018,
+      "value": 62.1674
+    },
+    {
+      "Entity": "África",
+      "Year": 2019,
+      "value": 62.449
+    },
+    {
+      "Entity": "África",
+      "Year": 2020,
+      "value": 62.2572
+    },
+    {
+      "Entity": "África",
+      "Year": 2021,
+      "value": 61.7866
+    },
+    {
+      "Entity": "África",
+      "Year": 2022,
+      "value": 62.9205
+    },
+    {
+      "Entity": "África",
+      "Year": 2023,
+      "value": 63.8428
     }
   ]
 }

@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js"></script>
 </head>
 <body>
 
@@ -25,7 +27,6 @@
     <li><button onclick="show('research')" id="nav-research">Investigación</button></li>
     <li><button onclick="show('people')"   id="nav-people">Nuestro equipo</button></li>
   </ul>
-  <button class="nav-cta">Contacto</button>
 </nav>
 
 <!-- ─────────────────────────────────
@@ -44,23 +45,63 @@
     </div>
   </div>
 
-  <!-- Stats bar -->
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <div class="stat-num">48.4 millones</div>
-        <div class="stat-lbl">numero de mayores de 60 años en México para el 2070, el triple que hoy</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">50%</div>
-        <div class="stat-lbl">de las personas nacidas en 2007 vivirán más de 104 años</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">4 trabajadores</div>
-        <div class="stat-lbl"> son los que habrán por cada adulto mayor en el 2050, hoy existen 10 trabajadores por cada adulto mayor</div>
+<!-- ── SCROLLYTELLING — ESPERANZA DE VIDA ── -->
+<div id="scrolly-section">
+  <div id="scrolly-left">
+
+    <div class="scrolly-step scrolly-step-life" data-step="intro">
+      <div class="scrolly-step-inner">
+        <p class="scrolly-eyebrow">1950 — El punto de partida</p>
+        <h2>A mediados del siglo XX, vivir más de 60 años era una excepción</h2>
+        <p>En 1950, la esperanza de vida promedio en África era de apenas 37 años. Incluso en las Américas, rondaba los 56. El mundo era fundamentalmente joven — y corto.</p>
       </div>
     </div>
+
+    <div class="scrolly-step scrolly-step-life" data-step="diverge">
+      <div class="scrolly-step-inner">
+        <p class="scrolly-eyebrow">1970s — La gran aceleración</p>
+        <h2>Las mejoras en salud pública transformaron trayectorias enteras</h2>
+        <p>Vacunas, saneamiento y acceso a atención médica dispararon la esperanza de vida en Asia y América Latina. En solo dos décadas, ganaron más años de vida de los que Europa tardó un siglo en ganar.</p>
+      </div>
+    </div>
+
   </div>
+  <div id="scrolly-right">
+    <div id="scrolly-chart-container">
+      <canvas id="lifeExpectancyChart"></canvas>
+      <p class="chart-source">Fuentes: Base de Datos de Mortalidad Humana (2025); ONU, Perspectivas de la Población Mundial (2024); Zijdeman et al. (2014); James C. Riley (2005) — con procesamiento de Our World in Data</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── SCROLLYTELLING — FERTILIDAD ── -->
+<div id="scrolly-section-2">
+  <div id="scrolly-left-2">
+
+    <div class="scrolly-step scrolly-step-fertility" data-step="fertility-high">
+      <div class="scrolly-step-inner">
+        <p class="scrolly-eyebrow">1950 — Alta fecundidad</p>
+        <h2>A mediados del siglo XX, las mujeres tenían en promedio más de 5 hijos</h2>
+        <p>En 1950, África registraba una tasa de fecundidad de más de 6.5 hijos por mujer. Incluso en América Latina, la cifra superaba los 5.5. Solo Europa y América del Norte se encontraban por debajo de 3.</p>
+      </div>
+    </div>
+
+    <div class="scrolly-step scrolly-step-fertility" data-step="fertility-fall">
+      <div class="scrolly-step-inner">
+        <p class="scrolly-eyebrow">Hoy — La gran transición demográfica</p>
+        <h2>En 70 años, la fecundidad global cayó a la mitad</h2>
+        <p>Para 2020, todas las regiones muestran una caída sostenida. Asia pasó de más de 5 hijos por mujer a menos de 2.5. Esta transformación redefine la estructura de las economías y el crecimiento de la población.</p>
+      </div>
+    </div>
+
+  </div>
+  <div id="scrolly-right-2">
+    <div id="scrolly-chart-container-2">
+      <canvas id="fertilityChart"></canvas>
+      <p class="chart-source">Fuente: ONU, Perspectivas de la Población Mundial (2024) — procesado por Our World in Data</p>
+    </div>
+  </div>
+</div>
 
   <!-- Body -->
   <div class="home-body">

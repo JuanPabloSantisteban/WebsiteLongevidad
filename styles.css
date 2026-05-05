@@ -365,3 +365,153 @@ footer {
   .nav-cta { display: none; }
   .nav-links button { padding: 6px 9px; font-size: 13px; }
 }
+
+/* ── SCROLLYTELLING ── */
+#scrolly-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+#scrolly-left {
+  width: 40%;
+  padding: 0 5vw;
+}
+
+.scrolly-step {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.scrolly-step-inner {
+  max-width: 400px;
+}
+
+.scrolly-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--emerald);
+  margin-bottom: 12px;
+  font-family: var(--body);
+}
+
+.scrolly-step-inner h2 {
+  font-family: var(--head);
+  font-size: clamp(22px, 2.5vw, 32px);
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.scrolly-step-inner p {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.scrolly-step.is-active .scrolly-step-inner h2 {
+  color: var(--emerald);
+  transition: color 0.3s ease;
+}
+
+#scrolly-right {
+  width: 60%;
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+}
+
+#scrolly-chart-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 720px) {
+  #scrolly-section {
+    flex-direction: column;
+  }
+  #scrolly-left {
+    width: 100%;
+  }
+  #scrolly-right {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 50vh;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}
+
+.chart-source {
+  font-size: 10px;
+  color: var(--gray);
+  line-height: 1.5;
+  margin-top: 14px;
+  font-family: var(--body);
+  font-weight: 300;
+}
+
+/* ── SCROLLYTELLING SECTION 2 (FERTILIDAD) ── */
+#scrolly-section-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+
+#scrolly-left-2 {
+  width: 40%;
+  padding: 0 5vw;
+}
+
+#scrolly-right-2 {
+  width: 60%;
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--bg2);
+  border-left: 1px solid var(--border);
+}
+
+#scrolly-chart-container-2 {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 720px) {
+  #scrolly-section-2 {
+    flex-direction: column;
+  }
+  #scrolly-left-2 {
+    width: 100%;
+  }
+  #scrolly-right-2 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 50vh;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}
