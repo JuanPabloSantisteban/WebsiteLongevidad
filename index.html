@@ -3,381 +3,10 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Centro Económico de Prosperidad Demográfica</title>
+  <title>Centro del Cambio Demográfico y la Prosperidad Económica</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --green:       #1a5c3a;
-      --green2:      #2e8b57;
-      --green-light: #e8f5ee;
-      --green-pale:  #f4faf7;
-      --ink:         #0f1a14;
-      --ink2:        #2c3e34;
-      --muted:       #5a7265;
-      --hint:        #8aa395;
-      --bg:          #fafaf7;
-      --bg2:         #f2f2ec;
-      --border:      #d0d8d2;
-      --border2:     #b8c5bc;
-      --radius:      8px;
-      --radius-lg:   12px;
-      --head:        'Libre Baskerville', serif;
-      --body:        'DM Sans', sans-serif;
-    }
-
-    body {
-      font-family: var(--body);
-      background: var(--bg2);
-      color: var(--ink);
-    }
-
-    /* ── NAV ── */
-    nav {
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      padding: 0 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 62px;
-      position: sticky;
-      top: 0;
-      z-index: 50;
-    }
-    .nav-left { display: flex; align-items: center; gap: 18px; }
-    .tec-logo img { height: 32px; width: auto; display: block; }
-    .nav-divider { width: 1px; height: 28px; background: var(--border2); }
-    .logo {
-      font-family: var(--head);
-      font-size: 19px;
-      color: var(--ink);
-      cursor: pointer;
-      letter-spacing: -0.3px;
-      font-weight: 700;
-    }
-    .logo span { color: var(--green2); font-style: italic; }
-    .nav-links { display: flex; gap: 2px; list-style: none; }
-    .nav-links button {
-      background: none;
-      border: none;
-      font-family: var(--body);
-      font-size: 14px;
-      color: var(--muted);
-      cursor: pointer;
-      padding: 7px 14px;
-      border-radius: var(--radius);
-      transition: all 0.15s;
-      font-weight: 400;
-    }
-    .nav-links button:hover { background: var(--green-light); color: var(--ink); }
-    .nav-links button.active { color: var(--green); font-weight: 500; background: var(--green-light); }
-    .nav-cta {
-      background: var(--green);
-      color: #fff;
-      font-family: var(--body);
-      font-size: 13px;
-      font-weight: 500;
-      padding: 8px 20px;
-      border-radius: var(--radius);
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .nav-cta:hover { background: var(--green2); }
-
-    /* ── PAGES ── */
-    .page { display: none; }
-    .page.active { display: block; }
-
-    /* ── HERO ── */
-    .hero-wrap { width: 100%; height: 500px; position: relative; overflow: hidden; }
-    .hero-wrap video { width: 100%; height: 100%; display: block; object-fit: cover; }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 48px 5vw;
-    }
-    .hero-badge {
-      display: inline-block;
-      background: rgba(26,92,58,0.88);
-      color: #b8e8cc;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 3px;
-      margin-bottom: 18px;
-      font-family: var(--body);
-    }
-    .hero-h1 {
-      font-family: var(--head);
-      font-size: clamp(30px, 4vw, 54px);
-      color: #fff;
-      line-height: 1.15;
-      letter-spacing: -0.8px;
-      max-width: 700px;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-    .hero-h1 em { font-style: italic; color: #8dd4aa; }
-    .hero-sub {
-      font-size: 16px;
-      color: rgba(255,255,255,0.78);
-      font-weight: 300;
-      max-width: 520px;
-      font-family: var(--body);
-    }
-
-    /* ── STATS BAR ── */
-    .stats-bar { background: var(--bg); border-bottom: 1px solid var(--border); }
-    .stats-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .stat-item { padding: 26px 24px; border-right: 1px solid var(--border); }
-    .stat-item:last-child { border-right: none; }
-    .stat-num {
-      font-family: var(--head);
-      font-size: 38px;
-      color: var(--green);
-      font-weight: 700;
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .stat-lbl { font-size: 13px; color: var(--muted); line-height: 1.5; font-weight: 300; }
-
-    /* ── HOME BODY ── */
-    .home-body { max-width: 1100px; margin: 0 auto; padding: 64px 5vw; }
-    .eyebrow {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--green2);
-      margin-bottom: 12px;
-      font-family: var(--body);
-    }
-    .sec-h2 {
-      font-family: var(--head);
-      font-size: clamp(24px, 3vw, 36px);
-      color: var(--ink);
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.4px;
-      margin-bottom: 14px;
-    }
-    .sec-lead {
-      font-size: 16px;
-      color: var(--muted);
-      line-height: 1.75;
-      font-weight: 300;
-      max-width: 560px;
-      margin-bottom: 40px;
-    }
-
-    /* ── FOCUS CARDS ── */
-    .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 60px; }
-    .focus-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 26px 22px;
-      transition: border-color 0.2s;
-      position: relative;
-    }
-    .focus-card::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 0; bottom: 0;
-      width: 3px;
-      background: var(--green2);
-      border-radius: 3px 0 0 3px;
-    }
-    .focus-card:hover { border-color: var(--green2); }
-    .focus-card h3 {
-      font-family: var(--head);
-      font-size: 17px;
-      color: var(--ink);
-      font-weight: 700;
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-    .focus-card p { font-size: 14px; color: var(--muted); line-height: 1.65; font-weight: 300; }
-
-    /* ── CTA BAND ── */
-    .cta-band {
-      background: var(--green);
-      border-radius: var(--radius-lg);
-      padding: 48px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .cta-band h3 {
-      font-family: var(--head);
-      font-size: 26px;
-      color: #fff;
-      font-weight: 700;
-      line-height: 1.25;
-      max-width: 460px;
-    }
-    .cta-band p { font-size: 15px; color: rgba(255,255,255,0.72); font-weight: 300; margin-top: 6px; }
-    .btn-white {
-      background: #fff;
-      color: var(--green);
-      font-family: var(--body);
-      font-size: 14px;
-      font-weight: 500;
-      padding: 12px 26px;
-      border-radius: var(--radius);
-      border: none;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    /* ── INTERIOR PAGE HERO ── */
-    .page-hero { background: var(--bg); border-bottom: 1px solid var(--border); padding: 60px 5vw 50px; }
-    .page-hero-inner { max-width: 800px; margin: 0 auto; }
-    .page-hero h1 {
-      font-family: var(--head);
-      font-size: clamp(28px, 3.5vw, 44px);
-      color: var(--ink);
-      font-weight: 700;
-      line-height: 1.15;
-      letter-spacing: -0.5px;
-      margin-bottom: 16px;
-    }
-    .page-hero p { font-size: 17px; color: var(--muted); line-height: 1.75; font-weight: 300; }
-
-    /* ── CONTENT WRAP ── */
-    .content-wrap { max-width: 1000px; margin: 0 auto; padding: 60px 5vw; }
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-bottom: 56px; }
-    .prose p { font-size: 15px; color: var(--muted); line-height: 1.8; font-weight: 300; margin-bottom: 14px; }
-
-    /* ── VALUES ── */
-    .value-list { display: flex; flex-direction: column; gap: 12px; }
-    .value-item {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      padding: 18px 20px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-    .value-num { font-family: var(--head); font-size: 22px; color: var(--green2); font-weight: 700; min-width: 28px; line-height: 1; }
-    .value-text h4 { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 3px; }
-    .value-text p { font-size: 13px; color: var(--muted); line-height: 1.55; font-weight: 300; }
-
-    /* ── PARTNER TAGS ── */
-    .partner-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
-    .partner-tag {
-      background: var(--green-light);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 7px 14px;
-      font-size: 13px;
-      color: var(--green);
-      font-weight: 400;
-    }
-
-    /* ── RESEARCH ── */
-    .research-list { display: flex; flex-direction: column; gap: 18px; }
-    .research-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 28px;
-      align-items: start;
-      transition: border-color 0.15s;
-    }
-    .research-card:hover { border-color: var(--green2); }
-    .pill {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 3px;
-      white-space: nowrap;
-    }
-    .pill-r { background: #e8f5ee; color: #0f5c35; }
-    .pill-b { background: #e8f0fb; color: #185fa5; }
-    .pill-d { background: #faeeda; color: #854f0b; }
-    .r-meta { font-size: 12px; color: var(--hint); margin-top: 7px; }
-    .research-card h3 {
-      font-family: var(--head);
-      font-size: 18px;
-      color: var(--ink);
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 10px 0 8px;
-    }
-    .research-card p { font-size: 14px; color: var(--muted); line-height: 1.65; font-weight: 300; }
-    .r-link { display: inline-block; margin-top: 12px; font-size: 13px; color: var(--green2); font-weight: 500; cursor: pointer; }
-
-    /* ── PEOPLE ── */
-    .people-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .person-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-    }
-    .person-avatar {
-      height: 96px;
-      background: var(--green-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid var(--border);
-    }
-    .avatar-initials { font-family: var(--head); font-size: 30px; color: var(--green); font-weight: 700; font-style: italic; }
-    .person-info { padding: 20px; }
-    .person-info h3 { font-family: var(--head); font-size: 17px; color: var(--ink); font-weight: 700; margin-bottom: 4px; }
-    .person-role { font-size: 12px; color: var(--green2); font-weight: 500; letter-spacing: 0.5px; margin-bottom: 8px; font-family: var(--body); }
-    .person-info p { font-size: 13px; color: var(--muted); line-height: 1.6; font-weight: 300; }
-    .person-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
-    .ptag { font-size: 11px; background: var(--green-light); color: var(--green); padding: 3px 8px; border-radius: 3px; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--ink);
-      padding: 36px 5vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .foot-logo { font-family: var(--head); font-size: 17px; color: #fff; font-style: italic; }
-    .foot-logo span { color: #8dd4aa; }
-    .foot-note { font-size: 13px; color: #6b8878; font-weight: 300; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 720px) {
-      .stats-inner, .focus-grid, .people-grid, .two-col { grid-template-columns: 1fr; }
-      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
-      .research-card { grid-template-columns: 1fr; }
-      .hero-wrap { height: 360px; }
-      .nav-cta { display: none; }
-      .nav-links button { padding: 6px 9px; font-size: 13px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -388,7 +17,7 @@
   <div class="nav-left">
     <div class="tec-logo"><img src="Images/Logo_Tec.png" alt="Tec de Monterrey"></div>
     <div class="nav-divider"></div>
-    <div class="logo" onclick="show('home')">Centro Económico de <span>Prosperidad Demográfica</span></div>
+    <div class="logo" onclick="show('home')">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
   </div>
   <ul class="nav-links">
     <li><button onclick="show('home')"     id="nav-home"     class="active">Inicio</button></li>
@@ -464,7 +93,7 @@
   </div>
 
   <footer>
-    <div class="foot-logo">Lab de <span>Longevidad</span></div>
+    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
     <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
   </footer>
 </div>
@@ -506,7 +135,7 @@
   </div>
 
   <footer>
-    <div class="foot-logo">Centro Económico de <span>Prosperidad Demográfica</span></div>
+    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
     <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
   </footer>
 </div>
@@ -578,7 +207,7 @@
   </div>
 
   <footer>
-    <div class="foot-logo">Centro Económico de <span>Prosperidad Demográfica</span></div>
+    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
     <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
   </footer>
 </div>
@@ -619,7 +248,7 @@
   </div>
 
   <footer>
-    <div class="foot-logo">Centro Económico de <span>Prosperidad Demográfica</span></div>
+    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
     <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
   </footer>
 </div>
@@ -627,15 +256,8 @@
 <!-- ─────────────────────────────────
      JS — page navigation
 ───────────────────────────────── -->
-<script>
-  function show(name) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
-    document.getElementById('page-' + name).classList.add('active');
-    document.getElementById('nav-' + name).classList.add('active');
-    window.scrollTo(0, 0);
-  }
-</script>
+<script src="scrollytelling.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
