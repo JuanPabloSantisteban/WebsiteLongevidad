@@ -230,54 +230,189 @@ function setFertilityProgress(progress) {
   fertilityChart.draw();
 }
 
-function initScrollytelling() {
-  Promise.all([
-    fetch('data/life_expectancy.json').then(r => r.json()),
-    fetch('data/fertility_rate.json').then(r => r.json())
-  ]).then(([lifeData, fertilityData]) => {
-    buildLifeChart(lifeData);
-    setLifeProgress(0);
+// Pre-fetch data so charts can render the moment the tab is opened
+const dataReady = Promise.all([
+  fetch('Data/life_expectancy.json').then(r => r.json()),
+  fetch('Data/fertility_rate.json').then(r => r.json()),
+  fetch('Data/population_pyramids.json').then(r => r.json())
+]);
 
-    buildFertilityChart(fertilityData);
-    setFertilityProgress(0);
+const pyramidCharts = {};
+const pyramidBuilt  = {};
+let pyramidData     = null;
 
-    const lifeScroller = scrollama();
-    lifeScroller
-      .setup({ step: '.scrolly-step-life', offset: 0.5, progress: true })
-      .onStepEnter(response => {
-        document.querySelectorAll('.scrolly-step-life').forEach(el => el.classList.remove('is-active'));
-        response.element.classList.add('is-active');
-        if (response.element.dataset.step === 'diverge' && response.direction === 'down') setLifeProgress(1);
-      })
-      .onStepProgress(response => {
-        if (response.element.dataset.step === 'intro') setLifeProgress(response.progress);
-      })
-      .onStepExit(response => {
-        if (response.direction === 'down' && response.element.dataset.step === 'diverge') setLifeProgress(1);
-        if (response.direction === 'up'   && response.element.dataset.step === 'intro')   setLifeProgress(0);
-      });
+function buildPyramidChart(year) {
+  const ctx = document.getElementById(`pyramidChart${year}`);
+  if (!ctx || !pyramidData) return;
 
-    const fertilityScroller = scrollama();
-    fertilityScroller
-      .setup({ step: '.scrolly-step-fertility', offset: 0.5, progress: true })
-      .onStepEnter(response => {
-        document.querySelectorAll('.scrolly-step-fertility').forEach(el => el.classList.remove('is-active'));
-        response.element.classList.add('is-active');
-        if (response.element.dataset.step === 'fertility-fall' && response.direction === 'down') setFertilityProgress(1);
-      })
-      .onStepProgress(response => {
-        if (response.element.dataset.step === 'fertility-high') setFertilityProgress(response.progress);
-      })
-      .onStepExit(response => {
-        if (response.direction === 'down' && response.element.dataset.step === 'fertility-fall') setFertilityProgress(1);
-        if (response.direction === 'up'   && response.element.dataset.step === 'fertility-high') setFertilityProgress(0);
-      });
+  const rows       = pyramidData[year];
+  const ageGroups  = rows.map(d => d.age);
+  const hombres    = rows.map(d => d.hombres);
+  const mujeres    = rows.map(d => d.mujeres);
+  const showYAxis = year === '2025';
 
-    window.addEventListener('resize', () => {
-      lifeScroller.resize();
-      fertilityScroller.resize();
-    });
-  }).catch(err => console.error('Error loading data:', err));
+  pyramidCharts[year] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ageGroups,
+      datasets: [
+        { label: 'Hombres', data: hombres, backgroundColor: '#17365D', borderWidth: 0 },
+        { label: 'Mujeres', data: mujeres, backgroundColor: '#2A9D6F', borderWidth: 0 }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      grouped: false,
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 700, easing: 'easeOutQuart' },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: c => `${c.dataset.label}: ${(Math.abs(c.parsed.x) / 1e6).toFixed(2)}M`
+          }
+        }
+      },
+      scales: {
+        x: {
+          min: -6500000,
+          max:  6500000,
+          afterBuildTicks: axis => {
+            axis.ticks = [-6000000, -3000000, 0, 3000000, 6000000].map(value => ({ value }));
+          },
+          ticks: {
+            font: { family: CHART_FONT, size: 8 },
+            color: TICK_COLOR,
+            callback: val => val === 0 ? '0' : Math.abs(val / 1e6).toFixed(0) + 'M'
+          },
+          grid: { display: false }
+        },
+        y: {
+          display: true,
+          afterFit(scale) { scale.width = 58; },
+          title: {
+            display: showYAxis,
+            text: 'Grupo de edad',
+            font: { family: CHART_FONT, size: 8 },
+            color: TICK_COLOR,
+            padding: { bottom: 4 }
+          },
+          ticks: {
+            display: showYAxis,
+            font: { family: CHART_FONT, size: 8 },
+            color: TICK_COLOR
+          },
+          grid: { display: false },
+          border: { display: false }
+        }
+      }
+    }
+  });
 }
 
-document.addEventListener('DOMContentLoaded', initScrollytelling);
+function showPyramid(year) {
+  const wrap = document.getElementById(`pyramid-${year}`);
+  if (!wrap) return;
+  wrap.classList.add('is-visible');
+  if (!pyramidBuilt[year]) {
+    buildPyramidChart(year);
+    pyramidBuilt[year] = true;
+  }
+}
+
+let scrollyInitialized = false;
+
+function setupScrollers() {
+  const lifeScroller = scrollama();
+  lifeScroller
+    .setup({ step: '.scrolly-step-life', offset: 0.5, progress: true })
+    .onStepEnter(response => {
+      document.querySelectorAll('.scrolly-step-life').forEach(el => el.classList.remove('is-active'));
+      response.element.classList.add('is-active');
+      if (response.element.dataset.step === 'diverge' && response.direction === 'down') setLifeProgress(1);
+    })
+    .onStepProgress(response => {
+      if (response.element.dataset.step === 'intro') setLifeProgress(response.progress);
+    })
+    .onStepExit(response => {
+      if (response.direction === 'down' && response.element.dataset.step === 'diverge') setLifeProgress(1);
+      if (response.direction === 'up'   && response.element.dataset.step === 'intro')   setLifeProgress(0);
+    });
+
+  const fertilityScroller = scrollama();
+  fertilityScroller
+    .setup({ step: '.scrolly-step-fertility', offset: 0.5, progress: true })
+    .onStepEnter(response => {
+      document.querySelectorAll('.scrolly-step-fertility').forEach(el => el.classList.remove('is-active'));
+      response.element.classList.add('is-active');
+      if (response.element.dataset.step === 'fertility-fall' && response.direction === 'down') setFertilityProgress(1);
+    })
+    .onStepProgress(response => {
+      if (response.element.dataset.step === 'fertility-high') setFertilityProgress(response.progress);
+    })
+    .onStepExit(response => {
+      if (response.direction === 'down' && response.element.dataset.step === 'fertility-fall') setFertilityProgress(1);
+      if (response.direction === 'up'   && response.element.dataset.step === 'fertility-high') setFertilityProgress(0);
+    });
+
+  const pyramidScroller = scrollama();
+  pyramidScroller
+    .setup({ step: '.scrolly-step-pyramid', offset: 0.5 })
+    .onStepEnter(response => {
+      document.querySelectorAll('.scrolly-step-pyramid').forEach(el => el.classList.remove('is-active'));
+      response.element.classList.add('is-active');
+      showPyramid(response.element.dataset.year);
+    });
+
+  const sectorScroller = scrollama();
+  sectorScroller
+    .setup({ step: '.scrolly-step-sector', offset: 0.5 })
+    .onStepEnter(response => {
+      document.querySelectorAll('.scrolly-step-sector').forEach(el => el.classList.remove('is-active'));
+      response.element.classList.add('is-active');
+      const sector = response.element.dataset.sector;
+      document.querySelectorAll('.sector-slide').forEach(el => el.classList.remove('is-active'));
+      const slide = document.querySelector(`.sector-slide[data-sector="${sector}"]`);
+      if (slide) slide.classList.add('is-active');
+    });
+
+  window.resizeScrollers = () => {
+    lifeScroller.resize();
+    fertilityScroller.resize();
+    pyramidScroller.resize();
+    sectorScroller.resize();
+  };
+  window.addEventListener('resize', window.resizeScrollers);
+}
+
+window.initScrollytelling = function() {
+  // Wait one frame so the new page has been laid out (display:block applied)
+  requestAnimationFrame(() => {
+    if (scrollyInitialized) {
+      if (lifeChart)      lifeChart.resize();
+      if (fertilityChart) fertilityChart.resize();
+      Object.values(pyramidCharts).forEach(c => c.resize());
+      if (window.resizeScrollers) window.resizeScrollers();
+      return;
+    }
+    scrollyInitialized = true;
+
+    dataReady.then(([lifeData, fertilityData, pyData]) => {
+      pyramidData = pyData;
+
+      buildLifeChart(lifeData);
+      setLifeProgress(0);
+
+      buildFertilityChart(fertilityData);
+      setFertilityProgress(0);
+
+      // One more frame to be sure the canvases got their final dimensions
+      requestAnimationFrame(() => {
+        if (lifeChart)      lifeChart.resize();
+        if (fertilityChart) fertilityChart.resize();
+        setupScrollers();
+      });
+    }).catch(err => console.error('Error loading data:', err));
+  });
+};

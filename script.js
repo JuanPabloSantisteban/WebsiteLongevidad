@@ -4,4 +4,5 @@ function show(name) {
   document.getElementById('page-' + name).classList.add('active');
   document.getElementById('nav-' + name).classList.add('active');
   window.scrollTo(0, 0);
+  if (name === 'quehacemos' && window.initScrollytelling) window.initScrollytelling();
 }
