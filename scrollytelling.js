@@ -13,12 +13,12 @@ const LIFE_COLORS = {
 };
 
 const FERTILITY_COLORS = {
-  'Africa':                        '#e07b39',
+  'África':                        '#e07b39',
   'Asia':                          '#17365D',
   'Europa':                        '#8b5cf6',
-  'Latinoamerica y el Caribe':     '#2A9D6F',
-  'Canada y EUA.':                 '#f59e0b',
-  'Oceania':                       '#94a3b8'
+  'Latinoamérica y el Caribe':     '#2A9D6F',
+  'Canada y EUA':                  '#f59e0b',
+  'Oceanía':                       '#94a3b8'
 };
 
 let lifeChart      = null;
