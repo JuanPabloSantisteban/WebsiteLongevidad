@@ -46,37 +46,83 @@
   </div>
 
   <!-- Body -->
-  <div class="home-body">
-    <div class="eyebrow">Qué hacemos</div>
-    <div class="sec-h2">Tres áreas de enfoque</div>
-    <p class="sec-lead">Nuestro trabajo aborda las dimensiones económicas de la longevidad más relevantes para quienes diseñan políticas, gestionan instituciones y dirigen empresas.</p>
+  <div class="home-feed">
+    <div class="home-feed-grid">
 
-    <div class="focus-grid">
-      <div class="focus-card">
-        <h3>Macroeconomía del envejecimiento</h3>
-        <p>Cómo las transiciones demográficas transforman el crecimiento del PIB, los sistemas fiscales y las transferencias intergeneracionales.</p>
+      <!-- Articles -->
+      <div class="articles-col">
+        <h2 class="feed-section-title">Lecturas y análisis del centro</h2>
+
+        <a class="article-card" href="#" onclick="show('research');return false;">
+          <div class="article-thumb article-thumb-placeholder"><span>Reporte</span></div>
+          <div class="article-content">
+            <div class="article-meta">2025 · Educación</div>
+            <h3 class="article-title">El futuro de la demanda de educación ante la reducción de la población joven</h3>
+            <p class="article-excerpt">Cómo la caída sostenida de la fertilidad transformará la demanda de servicios educativos y obligará a repensar la oferta académica en Latinoamérica.</p>
+            <div class="article-link">Leer reporte →</div>
+          </div>
+        </a>
+
+        <a class="article-card" href="#" onclick="show('research');return false;">
+          <div class="article-thumb article-thumb-placeholder"><span>Nota</span></div>
+          <div class="article-content">
+            <div class="article-meta">2025 · Sistemas financieros</div>
+            <h3 class="article-title">El financiamiento de la economía de la longevidad</h3>
+            <p class="article-excerpt">Los retos y oportunidades de diseñar productos financieros, esquemas de ahorro y mecanismos de inversión para una sociedad que vive cada vez más años.</p>
+            <div class="article-link">Leer nota →</div>
+          </div>
+        </a>
       </div>
-      <div class="focus-card">
-        <h3>Mercados laborales y longevidad productiva</h3>
-        <p>La economía de las vidas laborales más largas: recapacitación, pensiones, fuerzas de trabajo multigeneracionales y productividad.</p>
-      </div>
-      <div class="focus-card">
-        <h3>Sistemas financieros y equidad</h3>
-        <p>Reforma de pensiones, financiamiento de cuidados a largo plazo y arquitectura financiera para trayectorias de vida más diversas.</p>
-      </div>
+
+      <!-- Events -->
+      <aside class="events-col">
+        <h2 class="feed-section-title">Nuestras actividades</h2>
+
+        <div class="event-card">
+          <img class="event-image" src="Images/presentacion.webp" loading="lazy" alt="Presentación del Centro">
+          <div class="event-info">
+            <div class="event-date">28 ABR 2026</div>
+            <h4 class="event-title">Presentación de nuestro Centro ante profesores del Tec Ciudad de México</h4>
+          </div>
+        </div>
+      </aside>
+
     </div>
+  </div>
 
-    <div class="cta-band">
-      <div>
-        <h3>La economía de la longevidad no puede esperar</h3>
-        <p>Únase a nuestra red de investigadores, responsables de política y líderes empresariales.</p>
-      </div>
-      <button class="btn-white">Contáctenos</button>
+  <!-- ── HOME CTA BANNERS ── -->
+  <div class="home-cta-section">
+    <div class="home-cta-grid">
+      <a class="cta-card" href="#" onclick="show('quehacemos');return false;">
+        <h3 class="cta-card-title">¿Quieres saber más sobre nuestra investigación y enfoque?</h3>
+        <span class="cta-card-link">Conoce qué hacemos →</span>
+      </a>
+      <a class="cta-card cta-card-alt" href="#" onclick="show('about');return false;">
+        <h3 class="cta-card-title">¿Quiénes formamos parte del centro?</h3>
+        <span class="cta-card-link">Conócenos →</span>
+      </a>
     </div>
   </div>
 
   <footer>
-    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
+    <div class="foot-grid">
+      <div class="foot-col foot-col-brand">
+        <div class="foot-logo">Centro del Cambio<br>Demográfico y la<br>Prosperidad Económica</div>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Dirección</div>
+        <p class="foot-address">Av Carlos Lazo 100<br>Santa Fe, La Loma<br>Álvaro Obregón, 01389<br>Ciudad de México, CDMX</p>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Navegación</div>
+        <ul class="foot-nav">
+          <li><button onclick="show('home')">Inicio</button></li>
+          <li><button onclick="show('quehacemos')">Qué hacemos</button></li>
+          <li><button onclick="show('about')">Quiénes somos</button></li>
+          <li><button onclick="show('research')">Investigación</button></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </div>
 
@@ -343,13 +389,32 @@
 <!-- ── QUEHACEMOS CONCLUSION ── -->
 <div id="quehacemos-conclusion">
   <div class="quehacemos-conclusion-inner">
-    <p class="quehacemos-conclusion-text">En el <strong>Centro del Cambio Demográfico y la Prosperidad Económica</strong> estudiamos la transición demográfica en Latinoamérica y México, buscando entender las causas de los cambios y sus efectos en la sociedad.</p>
-    <button class="btn-research" onclick="show('research')">Conoce más de nuestra investigación aquí →</button>
+    <h2 class="quehacemos-conclusion-title">¿Qué hacemos?</h2>
+    <p>En el <strong>Centro del Cambio Demográfico y la Prosperidad Económica</strong> estudiamos la transición demográfica en Latinoamérica y México, buscando entender las causas de los cambios y sus efectos en la sociedad.</p>
+    <p>Buscamos comprender cómo se verá Latinoamérica dentro de 50 años y qué impacto tendrá la nueva estructura demográfica en las decisiones de inversión, las políticas públicas y la organización de la sociedad.</p>
+    <p>Mediante la investigación en economía de la longevidad, buscamos incidir en el sector público y privado, propiciando que Latinoamérica y México cuenten con condiciones adecuadas de infraestructura, productos financieros y oportunidades laborales para su población.</p>
   </div>
 </div>
 
   <footer>
-    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
+    <div class="foot-grid">
+      <div class="foot-col foot-col-brand">
+        <div class="foot-logo">Centro del Cambio<br>Demográfico y la<br>Prosperidad Económica</div>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Dirección</div>
+        <p class="foot-address">Av Carlos Lazo 100<br>Santa Fe, La Loma<br>Álvaro Obregón, 01389<br>Ciudad de México, CDMX</p>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Navegación</div>
+        <ul class="foot-nav">
+          <li><button onclick="show('home')">Inicio</button></li>
+          <li><button onclick="show('quehacemos')">Qué hacemos</button></li>
+          <li><button onclick="show('about')">Quiénes somos</button></li>
+          <li><button onclick="show('research')">Investigación</button></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </div>
 
@@ -359,38 +424,14 @@
 <div class="page" id="page-about">
   <div class="page-hero">
     <div class="page-hero-inner">
-      <div class="eyebrow">Quiénes somos</div>
-      <h1>Un laboratorio de ideas dedicado a la economía de la longevidad</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud.</p>
+      <h1>Quiénes somos</h1>
     </div>
   </div>
 
   <div class="content-wrap">
-    <div class="prose" style="max-width:820px; margin-bottom:56px">
-      <p>El mundo está experimentando una transición demográfica sin precedentes. El aumento sostenido de la esperanza de vida y la disminución de las tasas de fertilidad dará pie a una nueva distribución demográfica para la cual aún no estamos preparados. Latino América no es la excepción: muchas de las instituciones económicas que rigen hoy fueron diseñadas cuando la esperanza de vida era de 50 a 65 años. Actualmente, el sistema de pensiones, los mercados laborales, el sistema financiero, en particular el sistema de seguros médicos y las políticas públicas aún no están listos para este fenómeno demográfico.</p>
-      <p>En el Laboratorio de Longevidad estudiamos las implicaciones económicas de este cambio, buscando comprender cómo se verá Latino América dentro de 50 años y qué impacto tendrá en las decisiones de inversión, las políticas públicas y la organización de la sociedad a lo largo de la vida.</p>
-      <p>Mediante la investigación en economía de la longevidad, buscamos incidir en el sector público y privado, propiciando así la prosperidad demográfica, donde Latinoamérica cuente con condiciones adecuadas de infraestructura, productos financieros y oportunidades laborales para los adultos mayores.</p>
-    </div>
 
-    <div>
-      <div class="eyebrow">Alianzas estratégicas</div>
-      <div class="sec-h2" style="font-size:24px; margin-bottom:8px">Lorem ipsum dolor sit amet instituciones</div>
-      <p style="font-size:15px; color:var(--muted); line-height:1.75; font-weight:300; margin-bottom:18px">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation.
-      </p>
-      <div class="partner-strip">
-        <div class="partner-tag">Universidades</div>
-        <div class="partner-tag">Bancos centrales</div>
-        <div class="partner-tag">Organismos multilaterales</div>
-        <div class="partner-tag">Fondos de pensiones</div>
-        <div class="partner-tag">Gobiernos nacionales</div>
-        <div class="partner-tag">Sector salud</div>
-      </div>
-    </div>
-
-    <div class="team-section">
-      <div class="eyebrow">Nuestro equipo</div>
-      <div class="sec-h2" style="font-size:28px; margin-bottom:32px">Cónocenos</div>
+    <div class="about-section">
+      <h2 class="sec-h2" style="font-size:28px; margin-bottom:28px">Conócenos</h2>
       <div class="people-grid">
 
         <div class="person-card">
@@ -413,11 +454,40 @@
 
       </div>
     </div>
+
+    <div class="about-section about-section-divider">
+      <h2 class="sec-h2" style="font-size:28px; margin-bottom:28px">Instituciones y organizaciones que hacen esto posible</h2>
+      <div class="supporters-grid">
+        <div class="supporter-card">
+          <img src="Images/Logo_Tec.png" loading="lazy" alt="Tec de Monterrey">
+        </div>
+        <div class="supporter-card supporter-card-vanguard">
+          <img src="Images/Vanguard-logo.png" loading="lazy" alt="Vanguard">
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <footer>
-    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
-    <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
+    <div class="foot-grid">
+      <div class="foot-col foot-col-brand">
+        <div class="foot-logo">Centro del Cambio<br>Demográfico y la<br>Prosperidad Económica</div>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Dirección</div>
+        <p class="foot-address">Av Carlos Lazo 100<br>Santa Fe, La Loma<br>Álvaro Obregón, 01389<br>Ciudad de México, CDMX</p>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Navegación</div>
+        <ul class="foot-nav">
+          <li><button onclick="show('home')">Inicio</button></li>
+          <li><button onclick="show('quehacemos')">Qué hacemos</button></li>
+          <li><button onclick="show('about')">Quiénes somos</button></li>
+          <li><button onclick="show('research')">Investigación</button></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </div>
 
@@ -427,7 +497,6 @@
 <div class="page" id="page-research">
   <div class="page-hero">
     <div class="page-hero-inner">
-      <div class="eyebrow">Investigación</div>
       <h1>Evidencia para las decisiones de hoy</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud.</p>
     </div>
@@ -439,11 +508,11 @@
       <div class="research-card">
         <div>
           <div class="pill pill-r">Reporte</div>
-          <div class="r-meta">2025 · Macroeconomía</div>
+          <div class="r-meta">2025 · Educación</div>
         </div>
         <div>
-          <h3>Razones detrás de la desincorporación de los adultos mayores en la economía laboral</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <h3>El futuro de la demanda de educación ante la reducción de la población joven</h3>
+          <p>Cómo la caída sostenida de la fertilidad transformará la demanda de servicios educativos y obligará a repensar la oferta académica en Latinoamérica.</p>
           <div class="r-link">Leer el reporte →</div>
         </div>
       </div>
@@ -451,36 +520,12 @@
       <div class="research-card">
         <div>
           <div class="pill pill-b">Nota de política</div>
-          <div class="r-meta">2025 · Mercados laborales</div>
+          <div class="r-meta">2025 · Sistemas financieros</div>
         </div>
         <div>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <h3>El financiamiento de la economía de la longevidad</h3>
+          <p>Los retos y oportunidades de diseñar productos financieros, esquemas de ahorro y mecanismos de inversión para una sociedad que vive cada vez más años.</p>
           <div class="r-link">Leer la nota →</div>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div>
-          <div class="pill pill-d">Base de datos</div>
-          <div class="r-meta">2024 · Economía financiera</div>
-        </div>
-        <div>
-          <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit ut labore et dolore</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <div class="r-link">Acceder a los datos →</div>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div>
-          <div class="pill pill-r">Reporte</div>
-          <div class="r-meta">2024 · Demografía y crecimiento</div>
-        </div>
-        <div>
-          <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit quis nostrud exercitation</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <div class="r-link">Leer el reporte →</div>
         </div>
       </div>
 
@@ -488,8 +533,24 @@
   </div>
 
   <footer>
-    <div class="foot-logo">Centro del Cambio <span>Demográfico y la Prosperidad Económica</span></div>
-    <div class="foot-note">Economía · Longevidad · Política · Diálogo</div>
+    <div class="foot-grid">
+      <div class="foot-col foot-col-brand">
+        <div class="foot-logo">Centro del Cambio<br>Demográfico y la<br>Prosperidad Económica</div>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Dirección</div>
+        <p class="foot-address">Av Carlos Lazo 100<br>Santa Fe, La Loma<br>Álvaro Obregón, 01389<br>Ciudad de México, CDMX</p>
+      </div>
+      <div class="foot-col">
+        <div class="foot-heading">Navegación</div>
+        <ul class="foot-nav">
+          <li><button onclick="show('home')">Inicio</button></li>
+          <li><button onclick="show('quehacemos')">Qué hacemos</button></li>
+          <li><button onclick="show('about')">Quiénes somos</button></li>
+          <li><button onclick="show('research')">Investigación</button></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </div>
 
