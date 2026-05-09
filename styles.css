@@ -550,7 +550,7 @@ nav {
   display: block;
 }
 .supporter-card-vanguard img {
-  max-height: 85px;
+  max-height: 106px;
 }
 
 @media (max-width: 720px) {
@@ -1031,6 +1031,59 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+/* Align Conócenos / Alianzas titles with qué hacemos title (5vw from viewport left) */
+#page-about > .content-wrap {
+  max-width: none;
+  margin: 0;
+  padding: 60px 5vw;
+}
+#page-about .about-section {
+  max-width: 1000px;
+}
+
+/* ── RESEARCH CTA BANNER (end of 2nd tab) ── */
+#research-cta-banner {
+  background: var(--navy);
+  padding: 64px 5vw 72px;
+  border-bottom: 1px solid var(--border);
+}
+.research-cta-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.research-cta-title {
+  font-family: var(--head);
+  font-size: clamp(20px, 2.2vw, 28px);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  max-width: 600px;
+}
+
+.btn-research-light {
+  background: #ffffff;
+  border: 1.5px solid #ffffff;
+  color: var(--navy);
+  font-family: var(--head);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 13px 30px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.btn-research-light:hover {
+  background: transparent;
+  color: #ffffff;
 }
 
 .quehacemos-conclusion-title {
