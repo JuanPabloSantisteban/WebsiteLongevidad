@@ -1352,3 +1352,299 @@ footer {
     flex-shrink: 0;
   }
 }
+
+/* ─────────────────────────────────────────────
+   MOBILE OPTIMIZATIONS — comprehensive overrides
+   These rules come last so they win the cascade
+───────────────────────────────────────────── */
+
+/* Hide long subtitle in brand on tablets + below */
+@media (max-width: 900px) {
+  .logo span { display: none; }
+  .logo { font-size: 16px; }
+}
+
+@media (max-width: 720px) {
+
+  body { -webkit-text-size-adjust: 100%; }
+
+  /* ── NAV: stack into 2 rows, links scroll horizontally ── */
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0;
+    gap: 0;
+  }
+  .nav-left {
+    padding: 10px 4vw;
+    gap: 10px;
+    width: 100%;
+  }
+  .tec-logo img { height: 26px; }
+  .nav-divider { height: 22px; }
+  .logo {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+  }
+  .nav-links {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid var(--border);
+    padding: 4px 4vw;
+    gap: 2px;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links button {
+    padding: 9px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-height: 36px;
+  }
+
+  /* ── HERO (home) ── */
+  .hero-wrap { height: 380px; }
+  .hero-overlay { padding: 28px 5vw; }
+  .hero-h1 {
+    font-size: clamp(22px, 7vw, 32px);
+    max-width: 100%;
+  }
+  .hero-sub { font-size: 14px; max-width: 100%; }
+
+  /* ── QUEHACEMOS HERO ── */
+  .quehacemos-hero { height: 340px; }
+  .quehacemos-hero-overlay { padding: 28px 5vw; }
+  .quehacemos-hero-title {
+    font-size: clamp(22px, 6.5vw, 30px);
+    max-width: 100%;
+  }
+  .quehacemos-hero-lead { font-size: 14px; max-width: 100%; }
+
+  /* ── HOME FEED ── */
+  .home-feed { padding: 48px 5vw; }
+  .feed-section-title { margin-bottom: 22px; }
+  .article-card { grid-template-columns: 1fr; }
+  .article-thumb { min-height: 140px; padding: 12px; }
+  .article-content { padding: 16px 18px 20px; }
+  .article-title { font-size: 16px; }
+  .article-excerpt { font-size: 13.5px; }
+  .event-image { height: 160px; }
+
+  /* ── HOME CTA ── */
+  .home-cta-section { padding: 48px 5vw 64px; }
+  .cta-card { padding: 32px 24px; min-height: 160px; gap: 24px; }
+
+  /* ── SCROLLY STEPS ── */
+  .scrolly-step {
+    min-height: 70vh;
+    padding: 40px 0;
+  }
+  .scrolly-step-inner {
+    max-width: 100%;
+    padding: 0 5vw;
+  }
+  .scrolly-step-inner h2 {
+    font-size: clamp(20px, 5.5vw, 26px);
+  }
+  .scrolly-step-inner p { font-size: 14px; }
+
+  /* ── SCROLLY 1 (life expectancy) — chart sticks to top, text scrolls below ── */
+  #scrolly-section {
+    flex-direction: column;
+  }
+  #scrolly-left {
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  #scrolly-right {
+    width: 100%;
+    order: 1;
+    position: sticky;
+    top: 92px;
+    height: 46vh;
+    padding: 14px 14px 6px;
+    background: var(--bg);
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+    z-index: 5;
+  }
+
+  /* ── SCROLLY 2 (fertility) ── */
+  #scrolly-section-2 {
+    flex-direction: column;
+  }
+  #scrolly-left-2 {
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  #scrolly-right-2 {
+    width: 100%;
+    order: 1;
+    position: sticky;
+    top: 92px;
+    height: 46vh;
+    padding: 14px 14px 6px;
+    background: var(--bg2);
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+    z-index: 5;
+  }
+
+  /* ── SCROLLY 3 (pyramids) — keep 3 side-by-side, sticky on top ── */
+  #scrolly-section-3 {
+    flex-direction: column;
+  }
+  #scrolly-left-3 {
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  #scrolly-right-3 {
+    width: 100%;
+    order: 1;
+    position: sticky;
+    top: 92px;
+    height: 52vh;
+    min-height: 340px;
+    padding: 12px 10px 6px;
+    background: var(--bg2);
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid var(--border);
+    z-index: 5;
+  }
+  #pyramids-container {
+    flex-direction: row;
+    height: auto;
+    flex: 1;
+    min-height: 0;
+    gap: 0;
+  }
+  .pyramid-wrap {
+    flex: 1;
+    height: auto;
+    min-height: 0;
+    padding-right: 4px;
+  }
+  .pyramid-wrap + .pyramid-wrap {
+    margin-left: -22px;
+  }
+  .pyramid-year-title {
+    font-size: 11px;
+    padding-left: 22px;
+  }
+  .pyramid-x-label {
+    font-size: 7px;
+    padding-left: 22px;
+  }
+  .pyramid-chart-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .pyramid-legend {
+    margin-top: 4px;
+    gap: 14px;
+    font-size: 11px;
+  }
+
+  /* ── SCROLLY 4 (sectors images) ── */
+  #scrolly-section-4 {
+    flex-direction: column;
+  }
+  #scrolly-left-4 {
+    width: 100%;
+    order: 2;
+    padding: 0;
+  }
+  #scrolly-right-4 {
+    width: 100%;
+    order: 1;
+    position: sticky;
+    top: 92px;
+    height: 42vh;
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+    z-index: 5;
+  }
+  .sector-slide-overlay { padding: 28px 20px 20px; }
+  .sector-label { font-size: clamp(22px, 6vw, 28px); }
+  .sector-counter { font-size: 10px; letter-spacing: 2px; }
+
+  /* ── SCROLLY BANNER ── */
+  .scrolly-banner { padding: 56px 5vw 48px; }
+
+  /* ── SECTORS INTRO ── */
+  #sectors-intro { padding: 48px 5vw; }
+
+  /* ── QUOTE SECTION ── */
+  #quote-section { flex-direction: column; }
+  #quote-left, #quote-right { width: 100%; }
+  #quote-left { padding: 40px 5vw; }
+  #quote-right { padding: 44px 5vw; }
+  .pullquote-mark { font-size: 72px; }
+  .pullquote-text { font-size: clamp(18px, 5vw, 22px); }
+
+  /* ── QUEHACEMOS CONCLUSION ── */
+  #quehacemos-conclusion { padding: 56px 5vw; }
+  .quehacemos-conclusion-inner p { font-size: 15px; line-height: 1.75; }
+
+  /* ── RESEARCH CTA BANNER ── */
+  #research-cta-banner { padding: 48px 5vw 56px; }
+  .research-cta-inner {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-research-light {
+    width: 100%;
+    padding: 14px 24px;
+    text-align: center;
+  }
+
+  /* ── ABOUT page ── */
+  #page-about > .content-wrap { padding: 48px 5vw; }
+  .about-section { margin-bottom: 48px; }
+  .about-section-divider { padding-top: 40px; }
+  .person-info h3 { font-size: 16px; }
+  .person-info p { font-size: 13px; }
+
+  /* ── RESEARCH page ── */
+  .content-wrap { padding: 40px 5vw; }
+  .research-card { padding: 22px 20px; gap: 16px; }
+  .research-card h3 { font-size: 17px; }
+  .page-hero { padding: 40px 5vw 32px; }
+
+  /* ── FOOTER ── */
+  footer { padding: 40px 5vw 32px; }
+  .foot-grid { gap: 32px; }
+  .foot-logo { font-size: 19px; }
+
+  /* ── Touch-friendly buttons everywhere ── */
+  .foot-nav button { padding: 6px 0; min-height: 30px; }
+}
+
+@media (max-width: 480px) {
+  .logo { font-size: 13px; }
+  .nav-links button { font-size: 12.5px; padding: 9px 10px; }
+  .tec-logo img { height: 22px; }
+  .hero-wrap { height: 320px; }
+  .quehacemos-hero { height: 300px; }
+  .hero-h1 { font-size: clamp(20px, 6.5vw, 28px); }
+  .quehacemos-hero-title { font-size: clamp(20px, 6vw, 26px); }
+  .pyramid-year-title { font-size: 10px; padding-left: 18px; }
+  .pyramid-x-label { font-size: 6px; padding-left: 18px; }
+  .pyramid-chart-title { font-size: 14px; }
+  .pyramid-wrap + .pyramid-wrap { margin-left: -18px; }
+  .scrolly-step-inner h2 { font-size: clamp(19px, 5.5vw, 23px); }
+  .article-thumb { min-height: 120px; }
+  .cta-card-title { font-size: 18px; }
+  .cta-card { padding: 28px 22px; }
+}
